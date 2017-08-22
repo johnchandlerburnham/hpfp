@@ -22,8 +22,7 @@
 
 
 ### Beta Reduce
-1. `(\abc.cba)zz(\wv.w)`
-   Reduction:
+1. `(\abc.cba)zz(\wv.w)` reduction:
    ``` 
    (\abc.cba)zz(\wv.w) ->
    (\bc.cbz)z(\wv.w) ->
@@ -33,8 +32,7 @@
    z
    ```
   
-2. `(\x.\y.xyy)(\a.a)b`
-   Reduction:
+2. `(\x.\y.xyy)(\a.a)b` reduction:
    ```
    (\x.\y.xyy)(\a.a)b ->
    (\y.(\a.a)yy)b ->
@@ -42,8 +40,7 @@
    bb
    ```
 
-3. `(\y.y)(\x.xx)(\z.zq)`
-   Reduction:
+3. `(\y.y)(\x.xx)(\z.zq)` reduction:
    ```
    (\y.y)(\x.xx)(\z.zq) ->
    (\x.xx)(\z.zq) ->
@@ -53,8 +50,7 @@
    qq
    ```
 
-4. `(\z.z)(\z.zz)(\z.zy)`
-   Reduction:
+4. `(\z.z)(\z.zz)(\z.zy)` reduction:
    ```
    (\z.z)(\z.zz)(\z.zy) ->
    (\z.zz)(\z.zy) ->
@@ -62,8 +58,7 @@
    (\z.zy)y ->
    yy
    ```
-5. `(\x.\y.xyy)(\y.y)y`
-   Reduction:
+5. `(\x.\y.xyy)(\y.y)y` reduction:
    ```
    (\x.\y.xyy)(\y.y)y ->
    (\y.(\y.y)yy)y
@@ -71,8 +66,7 @@
    yy
    ```
 
-6. `(\a.aa)(\b.ba)c`
-   Reduction
+6. `(\a.aa)(\b.ba)c` reduction:
    ```
    (\a.aa)(\b.ba)c ->
    (\b.ba)(\b.ba)c ->
@@ -80,8 +74,7 @@
    aac
    ```
 
-7. `(\xyz.xz(yz))(\x.z)(\x.a)`
-   Reduction:
+7. `(\xyz.xz(yz))(\x.z)(\x.a)` reduction:
    ```
    (\xyz.xz(yz))(\x.z)(\x.a) ->
    (\z.(\x.z1)z((\x.a)z))
