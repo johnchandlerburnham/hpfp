@@ -20,7 +20,7 @@ that `r` can access `area`'s arguments. However, `r` is now locally defined to
 
 ## Chapter Exercises
 
-###Reading syntax:
+### Reading syntax:
 
 1. a. correct
    b. not correct, need `(++)` not `++`
