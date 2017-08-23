@@ -22,26 +22,29 @@ that `r` can access `area`'s arguments. However, `r` is now locally defined to
 
 ### Reading syntax:
 
-1. a. correct
-   b. not correct, need `(++)` not `++`
-   c. correct
-   d. incorrect, string not closed
-   e. incorrect, wrong arg order
-   f. correct
-   g. incorrect, no integer argument
-   h. correct
+1. 
+- a. correct
+- b. not correct, need `(++)` not `++`
+- c. correct
+- d. incorrect, string not closed
+- e. incorrect, wrong arg order
+- f. correct
+- g. incorrect, no integer argument
+- h. correct
 
-2. a. d
-   b. c
-   c. e
-   d. a
-   e. b
+2. 
+- a. d
+- b. c
+- c. e
+- d. a
+- e. b
 
 ### Building Functions:
 
-1. a. `(++ "!")`
-   b. `(!! 4)`
-   c. `(drop 6)`
+1. 
+- a. `(++ "!")`
+- b. `(!! 4)`
+- c. `(drop 6)`
 
 2. see ex2.hs
 3. see ex3.hs
