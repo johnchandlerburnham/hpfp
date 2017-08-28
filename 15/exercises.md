@@ -13,3 +13,12 @@ patience.hs
 
 ## Exercise: Maybe Another Monoid
 maybeanother.hs
+
+## Chapter Exercises
+
+### Semigroup exercises
+semigroupexercises.hs
+
+### Monoid exercises
+monoidexercises.hs
+mem.hs
