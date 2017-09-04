@@ -1,0 +1,24 @@
+name:                monadexercises
+version:             0.1.0.0
+-- synopsis:
+-- description:
+license:             BSD3
+license-file:        LICENSE
+author:              John Chandler Burnham
+maintainer:          jcb@johnchandlerburnham.com
+copyright:           2017 John Chandler Burnham
+category:            Web
+build-type:          Simple
+extra-source-files:  README.md
+cabal-version:       >=1.10
+
+library
+  hs-source-dirs:      src
+  exposed-modules:     BadMonad
+                     , ChapterExercises
+  build-depends:       base >= 4.7 && < 5
+                     , hspec
+                     , QuickCheck
+                     , checkers
+  default-language:    Haskell2010
+

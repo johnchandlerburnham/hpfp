@@ -19,7 +19,7 @@ applicativeexercises/ListApplicative.hs
 applicativeexercises/VariationEither.hs
 
 ## Chapter Exercises
-
+applicativeexercises/ChapterExercises.hs
 
 
 
