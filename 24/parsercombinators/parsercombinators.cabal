@@ -1,0 +1,30 @@
+name:                parsercombinators
+version:             0.1.0.0
+-- synopsis:
+-- description:
+license:             BSD3
+license-file:        LICENSE
+author:              John Chandler Burnham
+maintainer:          jcb@johnchandlerburnham.com
+copyright:           2017 John Chandler Burnham
+category:            Web
+build-type:          Simple
+extra-source-files:  README.md
+cabal-version:       >=1.10
+
+library
+  hs-source-dirs:      src
+  exposed-modules:     LearnParsers
+  build-depends:       base >= 4.7 && < 5
+                     , transformers
+                     , trifecta
+                     , parsers
+                     , parsec
+                     , raw-strings-qq
+                     , hspec
+                     , QuickCheck
+                     , quickcheck-instances
+                     , containers
+                     , aeson
+                     , time
+  default-language:    Haskell2010
