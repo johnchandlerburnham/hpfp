@@ -1,0 +1,23 @@
+name:                exercise
+version:             0.1.0.0
+-- synopsis:
+-- description:
+author:              John Chandler Burnham
+maintainer:          jcb@johnchandlerburnham.com
+copyright:           2017 John Chandler Burnham
+category:            Web
+build-type:          Simple
+cabal-version:       >=1.10
+
+library
+  hs-source-dirs:      src
+  exposed-modules:     Lib
+  build-depends:       base >= 4.7 && < 5
+                     , transformers
+                     , containers
+                     , text
+                     , scotty
+                     , ansi-terminal
+                     , random  
+  default-language:    Haskell2010
+
