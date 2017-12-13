@@ -1,3 +1,4 @@
+-- CorrectingSyntax1.hs
 module CorrectingSyntax1 where
  
 f xs = length xs + 1
