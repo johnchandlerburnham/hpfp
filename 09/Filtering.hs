@@ -1,13 +1,14 @@
+-- 09/Filtering.hs
 module Filtering where
 
--- ex 1
+filterThreeMult :: [Integer] -> [Integer]
 filterThreeMult = filter (\x -> x `mod` 3 /= 0)
 
--- ex 2
+howManyThreeMults :: [Integer] -> Int
 howManyThreeMults x = length x - (length . filterThreeMult) x
-howManyThreeMults2 = length . filter (\x -> x `mod` 3 == 0)
 
--- ex 3
+howManyThreeMults' :: [Integer] -> Int
+howManyThreeMults' = length . filter (\x -> x `mod` 3 == 0)
 
 removeArticle :: String -> [String]
 removeArticle = filter (not . isArticle) . words  

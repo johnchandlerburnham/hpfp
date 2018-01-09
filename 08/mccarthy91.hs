@@ -1,5 +1,3 @@
-module McCarthy91 where
-
 mc91 :: Integral a => a -> a
 mc91 n
   | n > 100 = n - 10 

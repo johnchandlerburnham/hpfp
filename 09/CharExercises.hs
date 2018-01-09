@@ -1,8 +1,10 @@
-module Exercises where
+module CharExercises where
 
 import Data.Char
 
--- 1 :t isUpper
+--1
+-- isUpper :: Char -> Bool
+-- toUpper :: Char -> Char
 
 -- 2 
 
@@ -11,14 +13,14 @@ filterUpper = filter isUpper
 -- 3 
 
 capFirst :: String -> String
-capFirst "" = "" 
 capFirst (x:xs) = (toUpper x):xs
+capFirst _ = "" 
 
 -- 4
 
 strToUpper :: String -> String
-strToUpper "" = "" 
 strToUpper (x:xs) = (toUpper x):(strToUpper xs)
+strToUpper _ = "" 
 
 -- 5 
 
