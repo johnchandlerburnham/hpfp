@@ -1,6 +1,7 @@
 {-# LANGUAGE GeneralizedNewtypeDeriving, FlexibleInstances #-}
 
-module TooMany where
+--10/LogicGoats.hs
+module LogicGoats where
 
 class TooMany a where
   tooMany :: a -> Bool

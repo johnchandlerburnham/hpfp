@@ -11,7 +11,6 @@ two = scanl (flip (*)) 1 [1..3]
 --4: reduce structure
 
 --5
-
 fiveA = foldr (++) "" ["woot", "WOOT", "woot"]
 fiveB = foldr max 'a' "fear is the little death"
 fiveC = foldr (&&) True [False, True]

@@ -1,4 +1,5 @@
-module Price2 where
+--11/Vehicles.hs
+module Vehicles where
 
 data Price = Price Integer deriving (Eq, Show)
 data Manufacturer = Mini | Mazda | Tata deriving (Eq, Show)
@@ -38,4 +39,4 @@ getManu (Car manu _) = manu
 
 -- 4: non-exhaustive patterns
 
--- 5 see price2.hs
+-- 5 see above

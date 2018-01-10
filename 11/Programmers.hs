@@ -1,4 +1,5 @@
-module Programmer where
+--11/Programmers.hs
+module Programmers where
 
 data OperatingSystem = GnuPlusLinux | OpenBSDPlus | Mac | Windows  
                         deriving (Eq, Show)

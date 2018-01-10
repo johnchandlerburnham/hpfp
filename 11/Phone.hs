@@ -68,7 +68,7 @@ mostPopularLetter :: String -> Char
 mostPopularLetter str = head $ maximumBy cmp $ group str where
   cmp a b = compare (length a) (length b)
 
--- costOfMostPopularLetter :: Phone -> String -> Press
+costOfMostPopularLetter :: Phone -> String -> Press
 costOfMostPopularLetter phone str = fingerTaps $ keyPressIn phone [a] where
   a = mostPopularLetter str
 

@@ -1,4 +1,4 @@
-module Folds2 where
+module DatabaseProcessing where
 
 import Data.Time
 
