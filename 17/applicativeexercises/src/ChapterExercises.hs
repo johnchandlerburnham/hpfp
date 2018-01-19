@@ -1,3 +1,4 @@
+--17/applicativeexercises/src/ChapterExercises.hs
 module ChapterExercises where
 
 import Control.Applicative

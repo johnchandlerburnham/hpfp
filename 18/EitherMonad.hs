@@ -1,3 +1,4 @@
+--18/EitherMonad.hs
 module EitherMonad where
 
 data Sum a b = First a | Second b deriving (Eq, Show)

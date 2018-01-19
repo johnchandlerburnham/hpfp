@@ -1,3 +1,4 @@
+--17/Lookups.hs
 module Lookups where
 
 import Data.List (elemIndex)
@@ -36,7 +37,6 @@ maxed :: Maybe Int
 maxed = (pure max') <*> x3 <*> y3
 
 -- 4
-
 xs = [1, 2, 3]
 ys = [4, 5, 6]
 
@@ -51,9 +51,3 @@ summed = (pure sum) <*> ((,) <$> x4 <*> y4)
 
 summed2 :: Maybe Integer
 summed2 = sum <$> ((,) <$> x4 <*> y4)
-
-
-
-
--- 4
-

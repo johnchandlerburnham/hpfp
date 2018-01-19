@@ -1,3 +1,4 @@
+--18/monadexercises/src/ChapterExercises.hs
 module ChapterExercises where
 
 import Control.Monad
@@ -6,7 +7,6 @@ import Test.QuickCheck.Checkers
 import Test.QuickCheck.Classes
 
 --1
-
 data Nope a = NopeDotJpg deriving (Eq, Show)
 
 instance Functor Nope where
@@ -27,7 +27,6 @@ instance Eq a => EqProp (Nope a) where
   (=-=) = eq
 
 -- 2 
-
 data PhEither b a = Right' b | Left' a deriving (Eq, Show)
 
 instance Functor (PhEither b) where
@@ -55,7 +54,6 @@ instance (Eq b, Eq a) => EqProp (PhEither b a) where
   (=-=) = eq
 
 -- 3
-
 data Identity a = Identity a deriving (Eq, Ord, Show)
 
 instance Functor Identity where
@@ -78,7 +76,6 @@ instance Eq a => EqProp (Identity a) where
   (=-=) = eq
 
 -- 4
-
 data List a = Nil | Cons a (List a) deriving (Eq, Show)
 
 instance Functor List where
@@ -124,7 +121,6 @@ instance Eq a => EqProp (List a) where
 -- Write functions
 
 -- 1
-
 j :: Monad m => m (m a) -> m a
 j x = x >>= id
 
