@@ -1,3 +1,4 @@
+--15/SemigroupMonoidExercises.hs
 module SemigroupMonoidExercises where
 
 import Test.QuickCheck
@@ -41,7 +42,6 @@ instance (Monoid a) => Monoid (Identity a) where
 type IdentAssoc = Identity String -> Identity String -> Identity String -> Bool 
 
 -- 3
-
 data Two a b = Two a b deriving (Eq, Show)
 
 instance (Arbitrary a, Arbitrary b) => Arbitrary (Two a b) where
@@ -61,7 +61,6 @@ type TwoAssoc =
   (Two String String) -> (Two String String) -> (Two String String) -> Bool 
 
 -- 4
-
 data Three a b c = Three a b c deriving (Eq, Show)
 
 instance (Arbitrary a, Arbitrary b, Arbitrary c) => Arbitrary (Three a b c) where
@@ -80,7 +79,6 @@ type ThreeAssoc = (Three String String String) ->
                   Bool 
 
 -- 5
-
 data Four a b c d = Four a b c d deriving (Eq, Show)
 
 instance (Arbitrary a, Arbitrary b, Arbitrary c, Arbitrary d) => 
@@ -103,7 +101,6 @@ type FourAssoc = (Four String String String String) ->
                  Bool 
 
 -- 6
-
 newtype BoolConj = BoolConj Bool deriving (Eq, Show)
 
 instance Arbitrary BoolConj where
@@ -123,7 +120,6 @@ instance Monoid BoolConj where
 type BoolConjAssoc = BoolConj -> BoolConj -> BoolConj -> Bool
 
 -- 7
-
 newtype BoolDisj = BoolDisj Bool deriving (Eq, Show)
 
 instance Arbitrary BoolDisj where
@@ -143,7 +139,6 @@ instance Monoid BoolDisj where
 type BoolDisjAssoc = BoolDisj -> BoolDisj -> BoolDisj -> Bool
 
 -- 8 
-
 data Or a b = Fst a | Snd b deriving (Eq, Show)
 
 instance (Arbitrary a, Arbitrary b) => Arbitrary (Or a b) where
@@ -217,7 +212,6 @@ compRightIdentity :: (Comp String) -> String -> Bool
 compRightIdentity a s = ((unComp (a M.<> mempty)) s) == ((unComp a) s)
 
 -- 11 
-
 data Validation a b = Fail a | Pass b deriving (Eq, Show)
 
 instance Semigroup a => Semigroup (Validation a b) where 
@@ -238,7 +232,6 @@ type ValidationAssoc = (Validation String String) ->
                        Bool 
 
 -- 12 
-
 newtype AccRight a b = AccRight (Validation a b) deriving (Eq, Show)
 
 instance (Semigroup b) => Semigroup (AccRight a b) where
@@ -258,7 +251,6 @@ type AccRightAssoc = (AccRight String String) ->
                      Bool 
 
 -- 13
-
 newtype AccBoth a b = AccBoth (Validation a b) deriving (Eq, Show)
 
 instance (Semigroup a, Semigroup b) => Semigroup (AccBoth a b) where
@@ -278,7 +270,6 @@ type AccBothAssoc = (AccBoth String String) ->
                     (AccBoth String String) -> 
                     Bool 
 -- Testing
-
 semigroupAssoc :: (Eq m, Semigroup m) => m -> m -> m -> Bool
 semigroupAssoc a b c = (a <> (b <> c)) == ((a <> b) <> c)
 

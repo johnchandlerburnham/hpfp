@@ -1,3 +1,4 @@
+--15/Madness.hs
 module Madness where
 
 import Data.Monoid

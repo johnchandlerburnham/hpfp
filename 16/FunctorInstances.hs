@@ -1,3 +1,4 @@
+--16/FunctorInstances.hs
 module FunctorInstances where
 
 import Test.QuickCheck
@@ -39,7 +40,6 @@ instance Functor (Two a) where
   fmap f (Two a b) = Two a (f b)
 
 -- 4
-
 data Three a b c = Three a b c deriving (Eq, Show)
 
 instance (Arbitrary a, Arbitrary b, Arbitrary c) => Arbitrary (Three a b c) where
@@ -53,7 +53,6 @@ instance Functor (Three a b) where
   fmap f (Three a b c) = Three a b (f c)
 
 -- 5
-
 data Three' a b = Three' a b b deriving (Eq, Show)
 
 instance (Arbitrary a, Arbitrary b) => Arbitrary (Three' a b) where
@@ -67,7 +66,6 @@ instance Functor (Three' a) where
   fmap f (Three' a b b') = Three' a (f b) (f b')
 
 -- 6
-
 data Four a b c d = Four a b c d deriving (Eq, Show)
 
 instance (Arbitrary a, Arbitrary b, Arbitrary c, Arbitrary d) => 
@@ -83,7 +81,6 @@ instance Functor (Four a b c) where
   fmap f (Four a b c d) = Four a b c (f d)
 
 -- 7
-
 data Four' a b = Four' a a a b deriving (Eq, Show)
 
 instance (Arbitrary a, Arbitrary b) => Arbitrary (Four' a b) where

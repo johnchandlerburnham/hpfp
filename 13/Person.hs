@@ -1,3 +1,4 @@
+--13/Person.hs
 module Person where
 
 type Name = String
@@ -12,7 +13,7 @@ mkPerson name age
   | name == ""            = Left NameEmpty
   | not (age > 0)         = Left AgeTooLow
   | otherwise             = Left $ Unknown $ "Name was: " ++ show name 
-                                  ++ " Age was: "  ++ show age
+                                         ++ " Age was: "  ++ show age
 
 gimmePerson :: IO ()
 gimmePerson = do

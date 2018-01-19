@@ -1,3 +1,4 @@
+-- 14/exercises/test/Spec.hs
 module ExercisesTest where
 
 import qualified WordNumberTest as WN
@@ -14,7 +15,6 @@ prop_twiceHalf :: (Eq a, Fractional a) => a -> Bool
 prop_twiceHalf n = (halfIdentity n) == n
 
 --2
-
 listOrdered ::  (Ord a) => [a] -> Bool
 listOrdered xs = snd $ foldr go (Nothing, True) xs where
   go _ status@(_ , False) = status
@@ -53,12 +53,10 @@ expCommutative :: (Num a, Integral a, Eq a) => a -> a -> Bool
 expCommutative x y = x ^ y == y ^ x
 
 -- 7
- 
 listReverse :: (Eq a) => [a] -> Bool
 listReverse list = (reverse . reverse) list == list
 
 -- 8 
-
 prop_apply :: (Eq b) => (a -> b) -> a -> Bool 
 prop_apply f x = (f $ x) == (f x)
 
@@ -68,7 +66,6 @@ prop_compose f g x = (f . g) x == f (g x)
 instance Show (a -> b) where show _ = "Arbitrary Function"
 
 -- 9
-
 prop_compareCons :: (Eq a) => [a] -> [a] -> Bool
 prop_compareCons xs ys = foldr (:) xs ys == (++) xs ys
 
@@ -79,17 +76,14 @@ prop_compareConcat :: (Eq a, Foldable t) => t [a] -> Bool
 prop_compareConcat xs = foldr (++) [] xs == concat xs
 
 -- 10
-
 prop_take :: Int -> [b] -> Bool
 prop_take n xs = length (take n xs) == n
 
 -- 11
-
 prop_read :: (Eq a, Show a, Read a) => a -> Bool
 prop_read x = (read (show x)) == x 
 
 -- Idempotence 
-
 twice f = f . f
 fourTimes = twice . twice
 
@@ -102,7 +96,6 @@ idem2 :: (Eq a, Ord a) => [a] -> Bool
 idem2 x = (sort x == twice sort x) && (sort x == fourTimes sort x)
 
 -- Make a Gen
-
 data Fool = Fulse | Frue deriving (Eq, Show)
 
 instance Arbitrary Fool where

@@ -1,3 +1,4 @@
+--16/PossiblyEither.hs
 module PossiblyEither where
 
 data Possibly a = LolNope | Yeppers a deriving (Eq, Show)

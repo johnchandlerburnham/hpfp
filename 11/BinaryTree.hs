@@ -66,7 +66,8 @@ testTree2 = Node (Node (Leaf) 2 (Node Leaf 5 Leaf)) 1
  
 foldTree1 :: (a -> b -> b -> b) -> b -> BinaryTree a -> b
 foldTree1 f a Leaf = a
-foldTree1 f a (Node left v right) = f v (foldTree1 f a left) (foldTree1 f a right)
+foldTree1 f a (Node left v right) = 
+  f v (foldTree1 f a left) (foldTree1 f a right)
 
 mapTree1 :: (a -> b) -> BinaryTree a -> BinaryTree b
 mapTree1 f bt = foldTree1 g Leaf bt where
