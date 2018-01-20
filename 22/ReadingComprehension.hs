@@ -1,9 +1,9 @@
+--22/ReadingComprehension.hs
 {-# LANGUAGE InstanceSigs #-}
 module ReadingComprehension where
 
 import Control.Monad
 import Control.Applicative
-
 
 newtype Reader r a = Reader { runReader :: r -> a }
 

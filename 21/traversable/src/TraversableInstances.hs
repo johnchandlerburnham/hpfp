@@ -1,10 +1,10 @@
+--21/traversable/src/TraversableInstances.hs
 module TraversableInstances where
 
 import Test.QuickCheck
 import Test.QuickCheck.Classes
 import Test.QuickCheck.Checkers
 import Data.Monoid
-
 
 -- Identity
 newtype Identity a = Identity a deriving (Eq, Ord, Show)
