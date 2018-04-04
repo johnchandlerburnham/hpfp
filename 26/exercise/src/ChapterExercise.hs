@@ -1,4 +1,4 @@
-module Lib where
+module ChapterExercises where
 
 import Control.Monad
 import Control.Monad.IO.Class
@@ -54,7 +54,3 @@ doExcite = do
   case excite of
     Nothing -> putStrLn "MOAR EXCITE"
     Just e -> putStrLn ("Good, was very excite: " ++ e)
-
-
-
-
