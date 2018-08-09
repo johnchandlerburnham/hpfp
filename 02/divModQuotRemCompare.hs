@@ -1,4 +1,3 @@
--- divModQuotRemCompare.hs
 module DivModQuotRemCompare where
 
 divModQuotRem :: Integer -> Integer -> IO () 
@@ -26,5 +25,5 @@ divModQuotRem x y = do
 sign x = div (abs x) x
 
 quot' x y = (sign x) * (sign y) * (div (abs x) (abs y))
-rem' x y = x 
+rem' x y = x
 
