@@ -1,4 +1,4 @@
-module Ex2 where
+module Exercise2 where
 
 parta = (++ "!")
 partb = (!! 4)
