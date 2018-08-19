@@ -1,5 +1,3 @@
--- SevenIsNotThree.hs
-
 module SevenIsNotThree where
 
 x = 7
