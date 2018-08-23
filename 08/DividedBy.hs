@@ -3,7 +3,7 @@ module DividedBy where
 
 unsafeDividedBy :: Integral a => a -> a -> (a, a)
 unsafeDividedBy num denom = go num denom 0
-  where 
+  where
     go n d count
       | n < d = (count, n)
       | otherwise = go (n - d) d (count + 1)
@@ -11,7 +11,7 @@ unsafeDividedBy num denom = go num denom 0
 -- div throws an exception on zero
 partialDividedBy :: Integral a => a -> a -> (a, a)
 partialDividedBy num denom = go num denom 0
-  where 
+  where
     go n d count
       | n < d = (count, n)
       | d < 0 = go n (negate d) count
@@ -24,7 +24,7 @@ data DividedResult = Result Integer | DividedByZero deriving (Eq, Show)
 
 dividedBy :: Integral a => a -> a-> DividedResult
 dividedBy num denom = go num denom 0
-  where 
+  where
     resNeg (Result x) = Result (negate x)
     go n d count
       | d == 0 = DividedByZero
