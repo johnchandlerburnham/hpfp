@@ -1,4 +1,3 @@
---13/ExitSuccess.hs
 module ExitSuccess where
 
 import Data.Char
@@ -10,7 +9,7 @@ palindrome = forever $ do
   line1 <- getLine
   if isPalindrome line1
   then putStrLn "It's a palindrome!"
-  else do putStrLn "nope" 
+  else do putStrLn "nope"
           exitSuccess
 
 isPalindrome :: String -> Bool
