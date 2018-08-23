@@ -1,17 +1,16 @@
---09/FearfulSymmetry.hs
 module FearfulSymmetry where
 
 split :: String -> [String]
 split [] = []
 split  x = word : split rest
-  where 
+  where
     word = takeWhile (/= ' ') x
     rest = (drop 1) $ dropWhile (/= ' ') x
 
 splitOn :: Char -> String -> [String]
 splitOn _ [] = []
 splitOn  c str = part : (splitOn c rest)
-  where 
+  where
     part = takeWhile (/= c) str
     rest = (drop 1) $ dropWhile (/= c) str
 
@@ -24,7 +23,7 @@ sentences = firstSen ++ secondSen ++ thirdSen ++ fourthSen
 myLines :: String -> [String]
 myLines x = splitOn '\n' x
 
-shouldEqual = 
+shouldEqual =
   [ "Tyger Tyger, burning bright"
   , "In the forests of the night"
   , "What immortal hand or eye"

@@ -1,12 +1,9 @@
---09/EnumFromTo.hs
-
 module EnumFromTo where
 
 -- the exercises for specific types
-
 eftBool:: Bool -> Bool -> [Bool]
 eftBool x y = go x y []
-  where 
+  where
     go a b c
       | a > b = c
       | a == b = reverse (a : c)
@@ -14,7 +11,7 @@ eftBool x y = go x y []
 
 eftInt:: Int -> Int -> [Int]
 eftInt x y = go x y []
-  where 
+  where
     go a b c
       | a > b = c
       | a == b = reverse (a : c)
@@ -22,7 +19,7 @@ eftInt x y = go x y []
 
 eftOrd:: Ordering -> Ordering -> [Ordering]
 eftOrd x y = go x y []
-  where 
+  where
     go a b c
       | a > b = c
       | a == b = reverse (a : c)
@@ -30,7 +27,7 @@ eftOrd x y = go x y []
 
 eftChar:: Char -> Char -> [Char]
 eftChar x y = go x y []
-  where 
+  where
     go a b c
       | a > b = c
       | a == b = reverse (a : c)
@@ -40,7 +37,7 @@ eftChar x y = go x y []
 
 eft :: (Ord a, Enum a) => a -> a -> [a]
 eft x y = go x y []
-  where 
+  where
     go a b c
       | a > b = c
       | a == b = reverse (a : c)
@@ -50,7 +47,7 @@ eft x y = go x y []
 
 eft2 :: (Ord a, Enum a) => a -> a -> [a]
 eft2 x y = go x y []
-  where 
+  where
     go a b c
       | a > b = c
       | a == b = c ++ a:[]

@@ -1,2 +1,3 @@
---09/foldbool.hs
+module FoldBool where
+
 foldBool = map (\x -> (Data.Bool.bool x (-x) (x == 3)))
