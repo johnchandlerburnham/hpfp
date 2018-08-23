@@ -1,15 +1,14 @@
---11/Vehicles.hs
 module Vehicles where
 
 data Price = Price Integer deriving (Eq, Show)
 data Manufacturer = Mini | Mazda | Tata deriving (Eq, Show)
 data Size = Small | Medium | Large deriving (Eq, Show)
-data Airline = PapuAir 
-             | CatapultsR'Us 
-             | TakeYourChancesUnited 
+data Airline = PapuAir
+             | CatapultsR'Us
+             | TakeYourChancesUnited
              deriving (Eq, Show)
 
-data Vehicle = Car Manufacturer Price 
+data Vehicle = Car Manufacturer Price
              | Plane Airline Size
              deriving (Eq, Show)
 
@@ -30,10 +29,9 @@ isPlane (Plane _ _) = True
 isPlane _ = False
 
 areCars :: [Vehicle] -> Bool
-areCars = any isCar 
+areCars = any isCar
 
 -- 3
-
 getManu :: Vehicle -> Manufacturer
 getManu (Car manu _) = manu
 
