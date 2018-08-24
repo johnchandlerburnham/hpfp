@@ -100,7 +100,7 @@ compiler flags that deal with warnings to begin with "W".
 
 ## Exercises: Eq Instances
 
-see `EqInstances.hs`
+[see `EqInstances.hs`](https://github.com/johnchandlerburnham/hpfp/blob/master/06/EqInstances.hs)
 
 ## Exercises: Tuple Experiment
 
@@ -126,11 +126,11 @@ see `EqInstances.hs`
 
 ### Does it typecheck?:
 
-see `Exercises.hs`
+[see `Exercises.hs`](https://github.com/johnchandlerburnham/hpfp/blob/master/06/Exercises.hs)
 
 ### Given a datatype declaration, what can we do?
 
-see `Datatype.hs`
+[see `Datatype.hs`](https://github.com/johnchandlerburnham/hpfp/blob/master/06/Datatype.hs)
 
 ### Match the types:
 
@@ -149,7 +149,7 @@ like e.g.  a `String`. We can't cast `i` upwards.
 
 ### Type-Kwon-Do: Electric Typealoo
 
-see `TypeKwonDo.hs`
+[see `TypeKwonDo.hs`](https://github.com/johnchandlerburnham/hpfp/blob/master/06/TypeKwonDo.hs)
 
 ## 6.17 Follow-up resources
 

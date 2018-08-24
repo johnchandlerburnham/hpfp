@@ -277,10 +277,10 @@ that `r` can access `area`'s arguments. However, `r` is now locally defined to
     b. `(!! 4)`
     c. `(drop 6)`
 
-2. see `Exercise2.hs`
-3. see `Exercise3.hs`
-4. see `Exercise4.hs`
-5. see `Exercise5.hs`
-6. see `Exercise5.hs`
+2. [see `Exercise2.hs`](https://github.com/johnchandlerburnham/hpfp/blob/master/03/Exercise2.hs)
+3. [see `Exercise3.hs`](https://github.com/johnchandlerburnham/hpfp/blob/master/03/Exercise3.hs)
+4. [see `Exercise4.hs`](https://github.com/johnchandlerburnham/hpfp/blob/master/03/Exercise4.hs)
+5. [see `Exercise5.hs`](https://github.com/johnchandlerburnham/hpfp/blob/master/03/Exercise5.hs)
+6. [see `Exercise5.hs`](https://github.com/johnchandlerburnham/hpfp/blob/master/03/Exercise5.hs)
 
 ---

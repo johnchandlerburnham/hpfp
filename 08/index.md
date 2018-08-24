@@ -10,7 +10,6 @@ Islas Malvinas) we don't have self-reference, just reference.
 For a thorough work-through of the fixed point combinator, see my [notes on
 Rojas' Tutorial Introduction to Lambda Calculus.](/projects/tilc/04)
 
-
 ## Intermission: Exercise
 
 ```
@@ -48,7 +47,7 @@ remember](https://hackage.haskell.org/package/base-4.11.1.0/docs/Unsafe-Coerce.h
 
 ### Reviewing currying
 
-see `ReviewingCurrying.hs`
+[see `ReviewingCurrying.hs`](https://github.com/johnchandlerburnham/hpfp/blob/master/08/ReviewingCurrying.hs)
 
 1. `"woops mrow woohoo"`
 2. `"1 mrow haha"`
@@ -74,19 +73,21 @@ see `ReviewingCurrying.hs`
     ```
 
 2.  see `RecursiveSum.hs`
+[see `RecursiveSum.hs`](https://github.com/johnchandlerburnham/hpfp/blob/master/08/RecursiveSum.hs)
 
 3.  see `RecursiveMult.hs`
+[see `RecursiveMult.hs`](https://github.com/johnchandlerburnham/hpfp/blob/master/08/RecursiveMult.hs)
 
 ### Fixing dividedBy:
 
-see `DividedBy.hs`
+[see `DividedBy.hs`](https://github.com/johnchandlerburnham/hpfp/blob/master/08/DividedBy.hs)
 
 ### McCarthy 91 function:
 
-see `McCarthy91.hs`
+[see `McCarth91.hs`](https://github.com/johnchandlerburnham/hpfp/blob/master/08/McCarth91.hs)
 
 ### Numbers into Words:
 
-see `WordNumber.hs`
+[see `WordNumber.hs`](https://github.com/johnchandlerburnham/hpfp/blob/master/08/WordNumber.hs)
 
 ---

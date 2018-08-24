@@ -188,8 +188,8 @@ Prelude>
 1. `Mood`
 2. `Blah` or `Woot`
 3. Woot is a value whose type is Mood, should be `changeMood :: Mood -> Mood`
-4. see `Mood.hs`
-5. see `Mood.hs`
+4. [see `Mood.hs`](https://github.com/johnchandlerburnham/hpfp/blob/master/04/Mood.hs)
+5. [see `Mood.hs`](https://github.com/johnchandlerburnham/hpfp/blob/master/04/Mood.hs)
 
 ## 4.4 Numeric types
 
@@ -476,15 +476,13 @@ This concept will be explained more in later chapters.
     d. Works returns `False`
     e. No instance `(Num Bool)`
 
-8. see `Exercises.hs`
-9. see `Exercises.hs`
-10. see `Exercises.hs`
+8. [see `Exercises.hs`](https://github.com/johnchandlerburnham/hpfp/blob/master/04/Exercises.hs)
+9. [see `Exercises.hs`](https://github.com/johnchandlerburnham/hpfp/blob/master/04/Exercises.hs)
+10. [see `Exercises.hs`](https://github.com/johnchandlerburnham/hpfp/blob/master/04/Exercises.hs)
 
 ### Correcting syntax
 
-1.  see `CorrectingSyntax.hs`
-2.  see `CorrectingSyntax.hs`
-3.  see `CorrectingSyntax.hs`
+[see `CorrectingSyntax.hs`](https://github.com/johnchandlerburnham/hpfp/blob/master/04/CorrectingSyntax.hs)
 
 ### Match the function names to their types
 
@@ -492,4 +490,3 @@ This concept will be explained more in later chapters.
 2.  b.
 3.  a.
 4.  d.
----

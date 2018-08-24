@@ -17,28 +17,30 @@ tags: hpfp, notes, haskell
 
 ### String processing
 
-see `StringProcessing.hs`
+[see `StringProcessing.hs`](https://github.com/johnchandlerburnham/hpfp/blob/master/12/StringProcessing.hs)
 
 ### Validate the word
 
-see `StringProcessing.hs`
+[see `StringProcessing.hs`](https://github.com/johnchandlerburnham/hpfp/blob/master/12/StringProcessing.hs)
 
 ### It's only Natural
 
-see `Natural.hs`
+[see `Natural.hs.hs`](https://github.com/johnchandlerburnham/hpfp/blob/master/12/Natural.hs.hs)
 
 ### Small library for Maybe
 
-see `MaybeLib.hs`
+[see `MaybeLib.hs.hs`](https://github.com/johnchandlerburnham/hpfp/blob/master/12/MaybeLib.hs.hs)
 
 ### Small library for Either
 
-see `EitherLib.hs`
+[see `EitherLib.hs.hs`](https://github.com/johnchandlerburnham/hpfp/blob/master/12/EitherLib.hs.hs)
 
 ### Write your own iterate and unfoldr
 
 see `Unfolds.hs`
+[see `Unfolds.hs.hs`](https://github.com/johnchandlerburnham/hpfp/blob/master/12/Unfolds.hs.hs)
 
 ### Finally something other than a list
 
 see `BinaryTreeUnfold.hs`
+[see `BinaryTreeUnfold.hs.hs`](https://github.com/johnchandlerburnham/hpfp/blob/master/12/BinaryTreeUnfold.hs.hs)

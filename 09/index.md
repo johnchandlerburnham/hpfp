@@ -8,13 +8,13 @@ title: "Notes (HPFP 09/31): Lists"
 
 ### Exercise: EnumFromTo
 
-see `EnumFromTo.hs`
+[see `EnumFromTo.hs`](https://github.com/johnchandlerburnham/hpfp/blob/master/09/EnumFromTo.hs)
 
 ## 9.6 Extracting portions of lists
 
 ### Exercises: Thy Fearful Symmetry
 
-see `FearfulSymmetry.hs`
+[see `FearfulSymmetry.hs`](https://github.com/johnchandlerburnham/hpfp/blob/master/09/FearfulSymmetry.hs)
 
 ## 9.7 List Comprehensions
 
@@ -37,7 +37,7 @@ see `FearfulSymmetry.hs`
 
 ### Exercises: Square Cube
 
-see `SquareCube.hs`
+[see `SquareCube.hs`](https://github.com/johnchandlerburnham/hpfp/blob/master/09/SquareCube.hs)
 
 ## 9.8 Spines and nonstrict evaluation
 
@@ -77,31 +77,31 @@ see `SquareCube.hs`
     b. `[1, 10, 20]`
     c. `[15, 15, 15]`
 
-6. see `FoldBool.hs`
+6. [see `FoldBool.hs`](https://github.com/johnchandlerburnham/hpfp/blob/master/09/FoldBool.hs)
 
 ## 9.10 Filtering lists of values
 
 ### Exercises: Filtering
 
-see `Filtering.hs`
+[see `Filtering.hs`](https://github.com/johnchandlerburnham/hpfp/blob/master/09/Filtering.hs)
 
 ### Zipping exercises
 
-see `ZippingExercises.hs`
+[see `ZippingExercises.hs`](https://github.com/johnchandlerburnham/hpfp/blob/master/09/ZippingExercises.hs)
 
 ## 9.12 Chapter Exercises
 
 ### Data.Char
 
-see `CharExercises.hs`
+[see `CharExercises.hs`](https://github.com/johnchandlerburnham/hpfp/blob/master/09/CharExercises.hs)
 
 ### Ciphers
 
-see `Cipher.hs`
+[see `Cipher.hs`](https://github.com/johnchandlerburnham/hpfp/blob/master/09/Cipher.hs)
 
 ### Writing your own standard functions
 
-see `StdFunc.hs`
+[see `StdFunc.hs`](https://github.com/johnchandlerburnham/hpfp/blob/master/09/StdFunc.hs)
 
 ## 9.14 Follow-up resources
 

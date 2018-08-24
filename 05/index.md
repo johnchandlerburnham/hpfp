@@ -297,9 +297,9 @@ interview](https://aphyr.com/posts/342-typing-the-technical-interview)
 
 ### Fix it
 
-1. see Sing.hs
-2. see Sing.hs
-3. see Arith3Broken.hs
+1. [see Sing.hs](https://github.com/johnchandlerburnham/hpfp/blob/master/05/Sing.hs)
+2. [see Sing.hs](https://github.com/johnchandlerburnham/hpfp/blob/master/05/Sing.hs)
+3. [see Arith3Broken.hs](https://github.com/johnchandlerburnham/hpfp/blob/master/05/Arith3Broken.hs)
 
 ### Type-Kwon-Do
 

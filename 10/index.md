@@ -33,27 +33,27 @@ are catamorphisms.
 
 ### Exercises: Understanding folds
 
-see `Folds.hs`
+[see `Folds.hs`](https://github.com/johnchandlerburnham/hpfp/blob/master/10/Folds.hs)
 
 ### Exercises: Database Processing
 
-see `DatabaseProcessing.hs`
+[see `DatabaseProcessing.hs`](https://github.com/johnchandlerburnham/hpfp/blob/master/10/DatabaseProcessing.hs)
 
 ## 10.9 Scans
 
 ### Scans Exercises
 
-see `Scans.hs`
+[see `Scans.hs`](https://github.com/johnchandlerburnham/hpfp/blob/master/10/Scans.hs)
 
 ## 10.10 Chapter Exercises
 
 ### Warm-up and reveiw
 
-see `WarmUp.hs`
+[see `WarmUp.hs`](https://github.com/johnchandlerburnham/hpfp/blob/master/10/WarmUp.hs)
 
 ### Rewriting functions using folds
 
-see `FunctionsUsingFolds.hs`
+[see `FunctionsUsingFolds.hs`](https://github.com/johnchandlerburnham/hpfp/blob/master/10/FunctionsUsingFolds.hs)
 
 ## 10.12 Follow-up resources
 

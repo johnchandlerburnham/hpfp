@@ -44,10 +44,10 @@ links to the files on Github. TBD.
 
 ### Modifying code
 
-1. see `CipherIO.hs`
-2. see `ExitSuccess.hs`
-3. see `ExitSuccess.hs`
-4. see `Person.hs`
+1. [see `CipherIO.hs`](https://github.com/johnchandlerburnham/hpfp/blob/master/13/CipherIO.hs)
+2. [see `ExitSuccess.hs`](https://github.com/johnchandlerburnham/hpfp/blob/master/13/ExitSuccess.hs)
+3. [see `ExitSuccess.hs`](https://github.com/johnchandlerburnham/hpfp/blob/master/13/ExitSuccess.hs)
+4. [see `Person.hs`](https://github.com/johnchandlerburnham/hpfp/blob/master/13/Person.hs)
 
 ## 13.15 Follow-up resources
 

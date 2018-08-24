@@ -315,7 +315,7 @@ This seems mysterious, but will make sense in later chapters.
 
 ### Exercises: Heal the Sick
 
-see `02/HealTheSick.hs`
+[see `HealTheSick.hs`](https://github.com/johnchandlerburnham/hpfp/blob/master/02/HealTheSick.hs)
 
 ## 2.8 Arithmetic functions in Haskell
 
@@ -563,11 +563,9 @@ fractional division for the latter.
 
 3. 3375
 
-4.  see `MoreFun.hs`
-
-5.  see `MoreFun.hs`
-
-6.  see `MoreFun.hs`
+4.  [see `MoreFun.hs`](https://github.com/johnchandlerburnham/hpfp/blob/master/02/MoreFun.hs)
+5.  [see `MoreFun.hs`](https://github.com/johnchandlerburnham/hpfp/blob/master/02/MoreFun.hs)
+6.  [see `MoreFun.hs`](https://github.com/johnchandlerburnham/hpfp/blob/master/02/MoreFun.hs)
 
 7.  `waxOff 10` returns `30`
 

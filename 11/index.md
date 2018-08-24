@@ -78,7 +78,7 @@ in great detail in later chapters.
 
 ### Exercises: Vehicles
 
-see `Vehicles.hs`
+[see `Vehicles.hs`](https://github.com/johnchandlerburnham/hpfp/blob/master/11/Vehicles.hs)
 
 ## 11.8 What makes these datatypes algebraic?
 
@@ -102,7 +102,7 @@ see `Vehicles.hs`
 
 ### Exercises: Logic Goats
 
-see `LogicGoats.hs`
+[see `LogicGoats.hs`](https://github.com/johnchandlerburnham/hpfp/blob/master/11/LogicGoats.hs)
 
 ## 11.10 Sum types
 
@@ -133,7 +133,7 @@ data Garden = Gardenia String
 
 ### Exercises: Programmers
 
-see `Programmers.hs`
+[see `Programmers.hs`](https://github.com/johnchandlerburnham/hpfp/blob/master/11/Programmers.hs)
 
 ## 11.14 Function type is exponential
 
@@ -271,7 +271,7 @@ set raised to the number of element in the input set.
 
 ### BinaryTree
 
-see `BinaryTree.hs`
+[see `BinaryTree.hs`](https://github.com/johnchandlerburnham/hpfp/blob/master/11/BinaryTree.hs)
 
 ## 11.18 Chapter Exercises
 
@@ -284,19 +284,19 @@ see `BinaryTree.hs`
 
 ### Ciphers
 
-see `Vignere.hs`
+[see `Vignere.hs`](https://github.com/johnchandlerburnham/hpfp/blob/master/11/Vignere.hs)
 
 ### As-patterns
 
-see `AsPatterns.hs`
+[see `AsPatterns.hs`](https://github.com/johnchandlerburnham/hpfp/blob/master/11/AsPatterns.hs)
 
 ### Language exercises
 
-see `LanguageExercises.hs`
+[see `LanguageExercises.hs`](https://github.com/johnchandlerburnham/hpfp/blob/master/11/LanguageExercises.hs)
 
 ### Phone exercise
 
-see `Phone.hs`
+[see `Phone.hs`](https://github.com/johnchandlerburnham/hpfp/blob/master/11/Phone.hs)
 
 [TODO: I'm looking back on this code several months after writing it. It's
 awkward, but I'll leave it as is for now, since it's an okay example of solving
@@ -306,4 +306,4 @@ the State monad.]
 
 ### Hutton's Razor
 
-see `Hutton.hs`
+[see `Hutton.hs`](https://github.com/johnchandlerburnham/hpfp/blob/master/11/Hutton.hs)
