@@ -1,11 +1,33 @@
 ---
 title: "Notes (HPFP 13/31): Building Projects"
-author: jcb
-date: 2017-11-01
-tags: notes, haskell, hpfp
 ---
 
 # 13 Building Projects
+
+Since I'm building these projects on NixOS, I have to modify how to build with
+stack by putting the following `shell.nix` file in the project:
+
+```
+{ghc}:
+with (import <nixpkgs> {});
+
+haskell.lib.buildStackProject {
+  inherit ghc;
+  name = "myEnv";
+  buildInputs = [ zlib ];
+  buildPhase = ''
+    export LANG=en_US.UTF-8
+    '';
+}
+```
+
+and then running stack with the `--nix` flag, or enabling nix in the
+`stack.yaml` (or globally in `~/.stack/config.yaml`) with
+
+```
+nix:
+  enable: true
+```
 
 ## 13.6 More on importing modules
 
@@ -26,7 +48,6 @@ tags: notes, haskell, hpfp
 
 See my [hangman project on GitHub](
 https://github.com/johnchandlerburnham/hpfp/tree/master/13/hangman)
-
 
 ~~I debated whether or not to include code snippets of full-fledged stack
 projects in this document. I've decided against it. It's one thing to include

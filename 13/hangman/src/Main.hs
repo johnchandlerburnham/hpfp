@@ -8,7 +8,7 @@ import System.Exit (exitSuccess)
 import System.Random (randomRIO)
 
 main :: IO ()
-main = do 
+main = do
   word <- randomWord'
   runGame $ freshPuzzle $ fmap toLower word
 
@@ -28,9 +28,10 @@ gameWords :: IO WordList
 gameWords = do
   aw <- allWords
   return (filter gameLength aw)
-  where gameLength w = 
-          let l = length (w :: String)
-          in  minWordLength < l && l < maxWordLength
+  where
+    gameLength w =
+      let l = length (w :: String)
+      in  minWordLength < l && l < maxWordLength
 
 randomWord :: WordList -> IO String
 randomWord wl = do 
@@ -41,8 +42,8 @@ randomWord' :: IO String
 randomWord' = gameWords >>= randomWord
 
 data Puzzle = Puzzle String [Maybe Char] [Char]
-instance Show Puzzle where 
-  show (Puzzle _ discovered guessed) = 
+instance Show Puzzle where
+  show (Puzzle _ discovered guessed) =
     (intersperse ' ' $ fmap renderPuzzleChar discovered)
     ++ " Guessed so far: " ++ guessed
 
@@ -60,20 +61,21 @@ renderPuzzleChar Nothing = '_'
 renderPuzzleChar (Just c) = c
 
 fillInCharacter :: Puzzle -> Char -> Puzzle
-fillInCharacter (Puzzle word filledIn s) c = Puzzle word newFilledIn (c : s) 
-  where newFilledIn = zipWith (zipp c) word filledIn
-        zipp guess wordChar fillChar = if   guess == wordChar
-                                       then Just wordChar
-                                       else fillChar
+fillInCharacter (Puzzle word filledIn s) c = Puzzle word newFilledIn (c : s)
+ where
+  newFilledIn = zipWith (zipp c) word filledIn
+  zipp guess wordChar fillChar = if guess == wordChar
+                                 then Just wordChar
+                                 else fillChar
 
 handleGuess :: Puzzle -> Char -> IO Puzzle
 handleGuess puzzle guess = do
   putStrLn $ "Your guess was: " ++ [guess]
   case (charInWord puzzle guess, alreadyGuessed puzzle guess) of 
-    (_, True) -> do 
+    (_, True) -> do
       putStrLn "Already guessed that char, pick another."
       return puzzle
-    (True, _) -> do 
+    (True, _) -> do
       putStrLn "Guess successful!"
       return (fillInCharacter puzzle guess)
     (False, _) -> do
