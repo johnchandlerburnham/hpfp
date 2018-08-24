@@ -6,7 +6,7 @@ import System.IO
 
 main :: IO ()
 main = do
-  putStr "Name?"
+  putStrLn "Name?"
   name <- getLine
   sayHello name
   dogs
