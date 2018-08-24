@@ -128,7 +128,7 @@ From [Gonzalez's "How to Desugar Haskell Code"](https://github.com/johnchandlerb
 
 ### Exercises: Variety Pack
 
-see `VarietyPack.hs`
+[see `VarietyPack.hs`](https://github.com/johnchandlerburnham/hpfp/blob/master/07/VarietyPack.hs)
 
 One important thing to remember about tuple syntax in Haskell is that the type
 constructor and data constructor syntax for tuples is exactly the same, and has
@@ -215,7 +215,7 @@ collapse the above chart into *values*, *first-order functions*, and
 
 ### Exercises: Guard Duty
 
-see `AvgGrade.hs`
+[see `AvgGrade.hs`](https://github.com/johnchandlerburnham/hpfp/blob/master/07/AvgGrade.hs)
 
 1. Can't do otherwise if theres no wise to other.
 2. No, because the conditions are not exclusive.
@@ -256,9 +256,8 @@ easier for another person to understand the function you're writing.
 
 ### Let's write code
 
-see `LetsWriteCode.hs`
-
-see `Arith4.hs`
+[see `LetsWriteCode.hs`](https://github.com/johnchandlerburnham/hpfp/blob/master/07/LetsWriteCode.hs)
+[see `Arith4.hs`](https://github.com/johnchandlerburnham/hpfp/blob/master/07/Arith4.hs)
 
 
 ## 7.13 Follow-up resources
