@@ -1,8 +1,5 @@
 ---
 title: "Notes (HPFP 16/31): Functor"
-author: jcb
-date: 2017-11-01
-tags: notes, haskell, hpfp
 ---
 # 16  Functor
 
@@ -41,7 +38,7 @@ types, but not both. In other words the function that fmap maps is of type `b
 -> c` and kind `*`. Furthermore, we have to apply the function to `Second b`
 rather than `First a`, because the structure that fmaps maps onto is of kind `*
 -> *`. Our structure is `(Sum a)` because `Sum` is of kind `* -> * -> *` and
-it needs to have accepted every type constructer but the last before its
+it needs to have accepted every type constructor but the last before its
 something that fmap can work on. But that doesn't mean we're barred from
 writing another function that does something different to `Sum`, but something
 different wont be fmap.
@@ -49,7 +46,7 @@ different wont be fmap.
 
 ## 16.7 Chapter Exercises
 
-Determine if a valid Fucntor can be written for the datatype provided:
+Determine if a valid Functor can be written for the datatype provided:
 
 1. No, Bool has kind `*` but fmap only works on `* -> *`
 2. Yes, note that `False'` and `True'` both take the same type `a`
