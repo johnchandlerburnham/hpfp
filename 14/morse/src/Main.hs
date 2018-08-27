@@ -14,14 +14,13 @@ convertToMorse = forever $ do
   when weAreDone exitSuccess
   line <- hGetLine stdin
   convertLine line
-
-  where 
-    convertLine line = do 
+  where
+    convertLine line = do
       let morse = stringToMorse line
-      case morse of 
+      case morse of
         (Just s) -> putStrLn (intercalate " " s)
         Nothing  -> do putStrLn $ "ERROR: " ++ line
-                       exitFailure  
+                       exitFailure
 
 convertFromMorse :: IO ()
 convertFromMorse = forever $ do
@@ -29,18 +28,17 @@ convertFromMorse = forever $ do
   when weAreDone exitSuccess
   line <- hGetLine stdin
   convertLine line
-  
-  where 
+  where
     convertLine line = do
       let decoded :: Maybe String
           decoded = traverse morseToChar (words line)
       case decoded of
         (Just s) -> putStrLn s
         Nothing  -> do putStrLn $ "ERROR: " ++ line
-                       exitFailure  
+                       exitFailure
 
 main :: IO ()
-main = do 
+main = do
   mode <- getArgs
   case mode of
     [arg] -> case arg of
@@ -49,4 +47,4 @@ main = do
                _      -> argError
     _     -> argError
   where argError = do putStrLn "Missing 'to' or 'from' argument e.g. 'morse to'"
-                      exitFailure 
+                      exitFailure

@@ -10,7 +10,7 @@ import Test.QuickCheck
 -- 1
 halfIdentity :: Fractional a => a -> a
 halfIdentity = (*2) . EX.half
- 
+
 prop_twiceHalf :: (Eq a, Fractional a) => a -> Bool
 prop_twiceHalf n = (halfIdentity n) == n
 
@@ -56,8 +56,8 @@ expCommutative x y = x ^ y == y ^ x
 listReverse :: (Eq a) => [a] -> Bool
 listReverse list = (reverse . reverse) list == list
 
--- 8 
-prop_apply :: (Eq b) => (a -> b) -> a -> Bool 
+-- 8
+prop_apply :: (Eq b) => (a -> b) -> a -> Bool
 prop_apply f x = (f $ x) == (f x)
 
 prop_compose :: (Eq c) => (b -> c) -> (a -> b) -> a -> Bool
@@ -81,9 +81,9 @@ prop_take n xs = length (take n xs) == n
 
 -- 11
 prop_read :: (Eq a, Show a, Read a) => a -> Bool
-prop_read x = (read (show x)) == x 
+prop_read x = (read (show x)) == x
 
--- Idempotence 
+-- Idempotence
 twice f = f . f
 fourTimes = twice . twice
 
@@ -130,5 +130,5 @@ main = do
   quickCheck (prop_compareConcat :: [String] -> Bool)
   quickCheck (prop_take :: Int -> String -> Bool)
   quickCheck (prop_read :: Int -> Bool)
-  quickCheck idem1 
+  quickCheck idem1
   quickCheck (idem2 :: String -> Bool)

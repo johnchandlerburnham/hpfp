@@ -1,7 +1,7 @@
 module Main where
 
 import qualified Data.Map as M
-import Morse 
+import Morse
 import Test.QuickCheck
 
 allowedChars :: [Char]
@@ -17,7 +17,7 @@ morseGen :: Gen Morse
 morseGen = elements allowedMorse
 
 prop_thereAndBackAgain :: Property
-prop_thereAndBackAgain = 
+prop_thereAndBackAgain =
   forAll charGen (\c -> ((charToMorse c) >>= morseToChar) == Just c)
 
 main :: IO ()

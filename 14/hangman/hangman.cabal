@@ -1,0 +1,45 @@
+name:                hangman
+version:             0.1.0.0
+-- synopsis:
+-- description:
+homepage:            https://github.com/githubuser/hangman#readme
+license:             BSD3
+license-file:        LICENSE
+author:              Author name here
+maintainer:          example@example.com
+copyright:           2017 Author name here
+category:            Web
+build-type:          Simple
+cabal-version:       >=1.10
+extra-source-files:  README.md
+
+library
+  hs-source-dirs:      src
+  exposed-modules:     Hangman
+  build-depends:       base >= 4.7 && < 5
+                     , hspec
+                     , containers
+                     , QuickCheck
+  default-language:    Haskell2010
+
+executable hangman
+  hs-source-dirs:      src
+  main-is:             Main.hs
+  other-modules:       Hangman
+  default-language:    Haskell2010
+  build-depends:       base >= 4.7 && < 5
+                      , random
+                      , split
+
+test-suite hangman-test
+  type:                exitcode-stdio-1.0
+  hs-source-dirs:      test
+  main-is:             Spec.hs
+  other-modules:       Hangman
+  build-depends:       base
+                     , hangman
+                     , hspec
+                     , containers
+                     , QuickCheck
+  ghc-options:         -threaded -rtsopts -with-rtsopts=-N
+  default-language:    Haskell2010

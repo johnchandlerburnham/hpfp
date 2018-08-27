@@ -27,6 +27,7 @@ executable morse
   main-is:             Main.hs
   ghc-options:         -threaded -rtsopts -with-rtsopts=-N -Wall -fwarn-tabs
   hs-source-dirs:      src
+  other-modules:       Morse
   build-depends:       base
                      , morse
                      , containers
