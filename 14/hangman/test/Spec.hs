@@ -1,4 +1,4 @@
-module Spec where
+module Main where
 
 import Hangman
 import Test.QuickCheck
@@ -6,8 +6,6 @@ import Test.QuickCheck.Monadic
 import Control.Monad (guard)
 import Data.List (nub)
 import Data.Char (isAsciiLower)
-
-
 
 lowerGen :: Gen Char
 lowerGen = suchThat arbitrary (isAsciiLower)

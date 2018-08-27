@@ -84,6 +84,15 @@ first.
 
 ### Validating ciphers
 
+[see `ciphers`](https://github.com/johnchandlerburnham/hpfp/blob/master/14/ciphers)
+
+This uses a little `newtype` trick to make sure that the arbitrary strings we
+generate are all composed of lowercase characters. The reason being that the
+`vignere` and `caesar` functions have a built-in filter that ensures they only
+work on lowercase characters. Arguably not a great design decision on my part
+when I wrote `vignere` and `caesar`, but I wanted to test the functions I
+actually wrote in the previous chapters rather than rework them.
+
 ## 14.9 Follow-up resources
 
 1. [Pedro Vasconcelos; An introduction to QuickCheck testing;](https://www.fpcomplete.com/user/pbv/an-introduction-to-quickcheck-testing)

@@ -1,5 +1,4 @@
--- 14/exercises/test/Spec.hs
-module ExercisesTest where
+module Main where
 
 import qualified WordNumberTest as WN
 import qualified Exercises as EX
@@ -40,10 +39,12 @@ multCommutative x y = x + y == y + x
 
 -- 5
 quotRemRule :: Integral a => a -> a -> Bool
-quotRemRule x y = (quot x y)*y + (rem x y) == x
+-- quotRemRule _ 0 = True
+quotRemRule x y = (quot x y) * y + (rem x y) == x
 
 divModRule :: Integral a => a -> a -> Bool
-divModRule x y = (quot x y)*y + (rem x y) == x
+-- divModRule _ 0 = True
+divModRule x y = (div x y) * y + (mod x y) == x
 
 -- 6
 expAssociative :: (Num a, Integral a, Eq a) => a -> a -> a -> Bool
@@ -112,23 +113,43 @@ fulsishFoolGen = do
 main :: IO ()
 main = do
   WN.main
+  putStrLn "prop_twiceHalf: "
   quickCheck (prop_twiceHalf :: Double -> Bool)
+  putStrLn "prop_sort: "
   quickCheck (prop_sort :: [Int] -> Bool)
+  putStrLn "plusAssociative: "
   quickCheck (plusAssociative :: Int -> Int -> Int -> Bool)
+  putStrLn "plusCommutative: "
   quickCheck (plusCommutative :: Int -> Int -> Bool)
+  putStrLn "multAssociative: "
   quickCheck (multAssociative :: Int -> Int -> Int -> Bool)
+  putStrLn "multCommutative: "
   quickCheck (multCommutative :: Int -> Int -> Bool)
+  putStrLn "quotRemRule:"
   quickCheck (quotRemRule :: Int -> Int -> Bool)
+  putStrLn "divModRule:"
   quickCheck (divModRule :: Int -> Int -> Bool)
+  putStrLn "expAssociative: "
   quickCheck (expAssociative :: Int -> Int -> Int -> Bool)
+  putStrLn "expCommutative: "
   quickCheck (expCommutative :: Int -> Int -> Bool)
+  putStrLn "listReverse: "
   quickCheck (listReverse :: [Char] -> Bool)
+  putStrLn "prop_apply:"
   quickCheck (prop_apply :: (Int -> Int) -> Int -> Bool)
+  putStrLn "prop_compose:"
   quickCheck (prop_compose :: (Int -> Int) -> (Int -> Int) -> Int -> Bool)
+  putStrLn "prop_composeCons:"
   quickCheck (prop_compareCons :: String -> String -> Bool)
+  putStrLn "prop_composeCons':"
   quickCheck (prop_compareCons' :: String -> String -> Bool)
+  putStrLn "prop_composeConcat"
   quickCheck (prop_compareConcat :: [String] -> Bool)
+  putStrLn "prop_take:"
   quickCheck (prop_take :: Int -> String -> Bool)
+  putStrLn "prop_read:"
   quickCheck (prop_read :: Int -> Bool)
+  putStrLn "idem1:"
   quickCheck idem1
+  putStrLn "idem2:"
   quickCheck (idem2 :: String -> Bool)

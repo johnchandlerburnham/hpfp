@@ -33,7 +33,7 @@ executable hangman
 
 test-suite hangman-test
   type:                exitcode-stdio-1.0
-  hs-source-dirs:      test
+  hs-source-dirs:      test, src
   main-is:             Spec.hs
   other-modules:       Hangman
   build-depends:       base
