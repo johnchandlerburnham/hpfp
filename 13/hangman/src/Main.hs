@@ -28,14 +28,14 @@ gameWords :: IO WordList
 gameWords = do
   aw <- allWords
   return (filter gameLength aw)
-  where
-    gameLength w =
-      let l = length (w :: String)
-      in  minWordLength < l && l < maxWordLength
+ where
+  gameLength w =
+    let l = length (w :: String)
+    in  minWordLength < l && l < maxWordLength
 
 randomWord :: WordList -> IO String
-randomWord wl = do 
-  randomIndex <- randomRIO (0, (length wl) - 1) 
+randomWord wl = do
+  randomIndex <- randomRIO (0, (length wl) - 1)
   return $ wl !! randomIndex
 
 randomWord' :: IO String
@@ -71,7 +71,7 @@ fillInCharacter (Puzzle word filledIn s) c = Puzzle word newFilledIn (c : s)
 handleGuess :: Puzzle -> Char -> IO Puzzle
 handleGuess puzzle guess = do
   putStrLn $ "Your guess was: " ++ [guess]
-  case (charInWord puzzle guess, alreadyGuessed puzzle guess) of 
+  case (charInWord puzzle guess, alreadyGuessed puzzle guess) of
     (_, True) -> do
       putStrLn "Already guessed that char, pick another."
       return puzzle
@@ -85,11 +85,11 @@ handleGuess puzzle guess = do
 gameOver :: Puzzle -> IO ()
 gameOver (Puzzle wordToGuess filledIn guessed) =
   if ((length guessed) - (length $ nub filledIn)) > 7
-  then 
+  then
     do putStrLn "You lose!"
        putStrLn $ "The word was: " ++ wordToGuess
        exitSuccess
-  else 
+  else
     do print (length guessed)
        print (filledIn)
        print (nub filledIn)
@@ -97,8 +97,8 @@ gameOver (Puzzle wordToGuess filledIn guessed) =
        return ()
 
 gameWin :: Puzzle -> IO ()
-gameWin (Puzzle _ filledIn _) = 
-  if all isJust filledIn 
+gameWin (Puzzle _ filledIn _) =
+  if all isJust filledIn
   then
     do putStrLn "You win!"
        exitSuccess
@@ -115,4 +115,3 @@ runGame puzzle = forever $ do
     [c] -> handleGuess puzzle c >>= runGame
     _   -> putStrLn "Guess must be a single character"
 
-    

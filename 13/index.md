@@ -60,8 +60,8 @@ news.~~
 Upon further reflection, I've decided to axe essentially all code snippets from
 my notes. Code is much better in a type-checked source file than in a markdown
 file where it can diverge from it's reference. I may add the snippets back if I
-figure out a clever way to get `hakyll` to auto-include them. Or I might add
-links to the files on Github. TBD.
+figure out a clever way to get `hakyll` to auto-include them. For now I'll just
+add links to the files on Github.
 
 ### Modifying code
 
