@@ -1,4 +1,3 @@
---15/Patience.hs
 module Patience where
 
 import Control.Monad
@@ -7,7 +6,7 @@ import Test.QuickCheck
 
 data Bull = Fools | Twoo deriving (Eq, Show)
 
-instance Arbitrary Bull where 
+instance Arbitrary Bull where
   arbitrary = frequency [ (1, return Fools), (1, return Twoo) ]
 
 instance Monoid Bull where

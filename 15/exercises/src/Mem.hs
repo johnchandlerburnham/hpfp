@@ -1,5 +1,4 @@
---15/Mem.hs
-module Mem where 
+module Mem where
 
 import Data.Monoid
 import Test.QuickCheck

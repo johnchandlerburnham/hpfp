@@ -1,4 +1,3 @@
---15/SemigroupMonoidExercises.hs
 module SemigroupMonoidExercises where
 
 import Test.QuickCheck

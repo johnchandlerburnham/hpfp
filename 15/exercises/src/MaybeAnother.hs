@@ -1,4 +1,3 @@
---15/MaybeAnother.hs
 module MaybeAnother where
 
 import Control.Monad
@@ -21,7 +20,7 @@ instance Arbitrary a => Arbitrary (First' a) where
     a <- arbitrary
     oneof [return (First' (Only a)), return (First' Nada)]
 
-instance Monoid (First' a ) where 
+instance Monoid (First' a ) where
   mempty = First' Nada
   mappend (First' Nada) (First' Nada) = (First' Nada)
   mappend (First' Nada) (First' (Only x)) = (First' (Only x))
@@ -45,5 +44,4 @@ main = do
   quickCheck (monoidAssoc :: FirstMappend)
   quickCheck (monoidLeftIdentity :: FstId)
   quickCheck (monoidRightIdentity :: FstId)
-   
 
