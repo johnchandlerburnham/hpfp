@@ -1,4 +1,3 @@
---17/FixerUpper.hs
 module FixerUpper where
 
 -- 1

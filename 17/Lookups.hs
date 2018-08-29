@@ -1,4 +1,3 @@
---17/Lookups.hs
 module Lookups where
 
 import Data.List (elemIndex)
@@ -7,7 +6,7 @@ import Data.List (elemIndex)
 added :: Maybe Integer
 added = (+3) <$> (lookup 3 $ zip [1, 2, 3] [4, 5, 6])
 
--- 2 
+-- 2
 y :: Maybe Integer
 y = lookup 2 $ zip [1, 2, 3] [4, 5, 6]
 

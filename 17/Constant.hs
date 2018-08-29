@@ -1,8 +1,6 @@
---17/Constant.hs
-
 module Constant where
 
-newtype Constant a b = 
+newtype Constant a b =
   Constant { getConstant :: a } deriving (Eq, Show, Ord)
 
 instance Functor (Constant a) where
