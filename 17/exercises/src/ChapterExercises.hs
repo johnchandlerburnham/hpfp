@@ -1,4 +1,3 @@
---17/applicativeexercises/src/ChapterExercises.hs
 module ChapterExercises where
 
 import Control.Applicative
@@ -10,18 +9,18 @@ import Test.QuickCheck.Classes
 -- Specialize
 -- 1
 listPure :: a -> [a]
-listPure = pure 
+listPure = pure
 
 listApply :: [(a -> b)] -> [a] -> [b]
-listApply = (<*>) 
+listApply = (<*>)
 
 -- 2
 ioPure :: a -> IO a
-ioPure = pure 
+ioPure = pure
 
 ioApply :: IO (a -> b) -> IO a -> IO b
 ioApply = (<*>)
- 
+
 -- 3
 tuplePure  :: (Monoid a, Monoid c) => a -> (c, a)
 tuplePure = pure
@@ -37,31 +36,31 @@ funcApply :: (e -> (a -> b)) -> (e -> a) -> (e -> b)
 funcApply = (<*>)
 
 -- Instances
--- 1 
+-- 1
 data Pair a = Pair a a deriving (Eq, Show)
 
 instance Arbitrary a => Arbitrary (Pair a) where
-  arbitrary = do 
-    a <- arbitrary 
-    a' <- arbitrary 
+  arbitrary = do
+    a <- arbitrary
+    a' <- arbitrary
     return (Pair a a')
 
 instance Functor Pair where
   fmap f (Pair a a') = Pair (f a) (f a')
 
 instance Applicative Pair where
-  pure a = Pair a a 
+  pure a = Pair a a
   (<*>) (Pair f f') (Pair a a') = Pair (f a) (f' a')
 
 instance (Eq a) => EqProp (Pair a) where
   (=-=) = eq
 
--- 2 
+-- 2
 data Two a b = Two a b deriving (Eq, Show)
 
 instance (Arbitrary a, Arbitrary b) => Arbitrary (Two a b) where
   arbitrary = do
-    a' <- arbitrary  
+    a' <- arbitrary
     b' <- arbitrary
     return (Two a' b')
 
@@ -80,7 +79,7 @@ data Three a b c = Three a b c deriving (Eq, Show)
 
 instance (Arbitrary a, Arbitrary b, Arbitrary c) => Arbitrary (Three a b c) where
   arbitrary = do
-    a' <- arbitrary  
+    a' <- arbitrary
     b' <- arbitrary
     c' <- arbitrary
     return (Three a' b' c')
@@ -101,7 +100,7 @@ data Three' a b = Three' a b b deriving (Eq, Show)
 
 instance (Arbitrary a, Arbitrary b) => Arbitrary (Three' a b) where
   arbitrary = do
-    a <- arbitrary  
+    a <- arbitrary
     b <- arbitrary
     b' <- arbitrary
     return (Three' a b b')
@@ -120,10 +119,10 @@ instance (Eq a, Eq b) => EqProp (Three' a b ) where
 
 data Four a b c d = Four a b c d deriving (Eq, Show)
 
-instance (Arbitrary a, Arbitrary b, Arbitrary c, Arbitrary d) => 
+instance (Arbitrary a, Arbitrary b, Arbitrary c, Arbitrary d) =>
   Arbitrary (Four a b c d) where
     arbitrary = do
-      a' <- arbitrary  
+      a' <- arbitrary
       b' <- arbitrary
       c' <- arbitrary
       d' <- arbitrary
@@ -145,7 +144,7 @@ data Four' a b = Four' a a a b deriving (Eq, Show)
 
 instance (Arbitrary a, Arbitrary b) => Arbitrary (Four' a b) where
     arbitrary = do
-      a <- arbitrary  
+      a <- arbitrary
       a' <- arbitrary
       a'' <- arbitrary
       b <- arbitrary

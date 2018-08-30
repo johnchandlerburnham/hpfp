@@ -12,7 +12,7 @@ instance Monoid a => Monoid (ZipList a) where
 
 -- instance Arbitrary a => Arbitrary (ZipList a) where
 --   arbitrary = ZipList <$> arbitrary
--- 
+--
 -- instance Arbitrary a => Arbitrary (Sum a) where
 --   arbitrary = Sum <$> arbitrary
 

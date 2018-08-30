@@ -1,4 +1,3 @@
---17/applicativeexercises/src/ListApplicative.hs
 module ListApplicative where
 
 import Control.Applicative
@@ -15,15 +14,15 @@ instance Functor List where
 
 instance Applicative List where
   pure x = Cons x Nil
-  (<*>) _  Nil = Nil 
-  (<*>) Nil _ = Nil 
+  (<*>) _  Nil = Nil
+  (<*>) Nil _ = Nil
   (<*>) fs as = flatMap (flip fmap as) fs
 --  (<*>) (Cons f fs) as = (fmap f as) `append` ((<*>) fs as)
 --  (<*>) fs as = flatMap (\f -> fmap f as) fs
 
 instance Arbitrary a => Arbitrary (List a) where
   arbitrary = do
-    as <- arbitrary 
+    as <- arbitrary
     return (mkList as)
 
 instance Eq a => EqProp (List a) where
@@ -42,12 +41,12 @@ instance Functor ZipList' where
   fmap f (ZipList' xs) = ZipList' $ fmap f xs
 
 instance Applicative ZipList' where
-  pure a = ZipList' $ repeat' a 
+  pure a = ZipList' $ repeat' a
   (<*>) (ZipList' fs) (ZipList' xs) = ZipList' (zipWith' fs xs)
 
 instance Arbitrary a => Arbitrary (ZipList' a) where
   arbitrary = do
-    as <- arbitrary 
+    as <- arbitrary
     return (ZipList' as)
 
 zipWith' :: List (a -> b) -> List a -> List b
@@ -72,7 +71,7 @@ fold :: (a -> b -> b) -> b -> List a -> b
 fold _ b Nil = b
 fold f b (Cons h t) = f h (fold f b t)
 
-concat' :: List (List a) -> List a 
+concat' :: List (List a) -> List a
 concat' = fold append Nil
 
 flatMap :: (a -> List b) -> List a -> List b

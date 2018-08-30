@@ -1,4 +1,3 @@
---17/applicativeexercises/src/VariationEither.hs
 module VariationEither where
 
 import Control.Applicative
