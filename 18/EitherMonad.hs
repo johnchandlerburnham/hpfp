@@ -1,4 +1,3 @@
---18/EitherMonad.hs
 module EitherMonad where
 
 data Sum a b = First a | Second b deriving (Eq, Show)
@@ -14,7 +13,7 @@ instance Applicative (Sum a) where
   (<*>) (Second f) (Second b) = Second (f b)
 
 instance Monad (Sum a) where
-  return = pure 
+  return = pure
   (>>=) (Second b) f = (f b)
 
 

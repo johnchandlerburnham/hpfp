@@ -1,4 +1,3 @@
---18/monadexercises/src/ChapterExercises.hs
 module ChapterExercises where
 
 import Control.Monad
@@ -23,10 +22,10 @@ instance Monad Nope where
 instance Arbitrary a => Arbitrary (Nope a) where
   arbitrary = return NopeDotJpg
 
-instance Eq a => EqProp (Nope a) where 
+instance Eq a => EqProp (Nope a) where
   (=-=) = eq
 
--- 2 
+-- 2
 data PhEither b a = Right' b | Left' a deriving (Eq, Show)
 
 instance Functor (PhEither b) where
@@ -47,10 +46,10 @@ instance Monad (PhEither b) where
 instance (Arbitrary a, Arbitrary b) => Arbitrary (PhEither b a)  where
   arbitrary = do
     b' <- arbitrary
-    a' <- arbitrary  
+    a' <- arbitrary
     oneof [return (Left' b'), return (Right' a')]
 
-instance (Eq b, Eq a) => EqProp (PhEither b a) where 
+instance (Eq b, Eq a) => EqProp (PhEither b a) where
   (=-=) = eq
 
 -- 3
@@ -72,26 +71,26 @@ instance Arbitrary a => Arbitrary (Identity a)  where
     a <- arbitrary
     return (Identity a)
 
-instance Eq a => EqProp (Identity a) where 
+instance Eq a => EqProp (Identity a) where
   (=-=) = eq
 
 -- 4
 data List a = Nil | Cons a (List a) deriving (Eq, Show)
 
 instance Functor List where
-  fmap f Nil = Nil 
+  fmap f Nil = Nil
   fmap f (Cons a as) = Cons (f a) (fmap f as)
 
 instance Applicative List where
   pure a = Cons a Nil
   -- (<*>) fs as = toList $ [f a | f <- (fromList fs), a <- (fromList as)]
-  (<*>) fs as = fold append Nil $ fmap (\f -> fmap f as) fs 
+  (<*>) fs as = fold append Nil $ fmap (\f -> fmap f as) fs
 
 instance Monad List where
   return = pure
-  -- (<*>) fs as = fold append Nil $ fmap (\f -> fmap f as) fs 
+  -- (<*>) fs as = fold append Nil $ fmap (\f -> fmap f as) fs
   --(>>=) as f = toList $ [b | a <- (fromList as), b <- (fromList $ f a)]
-  (>>=) as f = fold append Nil $ fmap f as 
+  (>>=) as f = fold append Nil $ fmap f as
 
 append :: List a -> List a -> List a
 append Nil ys = ys
@@ -102,17 +101,17 @@ fold _ b Nil = b
 fold f b (Cons h t) = f h (fold f b t)
 
 fromList :: List a -> [a]
-fromList Nil = [] 
+fromList Nil = []
 fromList (Cons a as) = a:(fromList as)
 
 toList :: [a] -> List a
-toList [] = Nil 
+toList [] = Nil
 toList (x:xs) = Cons x (toList xs)
 
 
 instance Arbitrary a => Arbitrary (List a) where
   arbitrary = do
-    as <- arbitrary 
+    as <- arbitrary
     return (toList as)
 
 instance Eq a => EqProp (List a) where
@@ -133,12 +132,12 @@ l2 :: Monad m => (a -> b -> c) -> m a -> m b -> m c
 l2 f ma mb = f <$> ma <*> mb
 
 -- 4
-a :: Monad m => m a -> m (a -> b) -> m b 
-a = flip (<*>) 
+a :: Monad m => m a -> m (a -> b) -> m b
+a = flip (<*>)
 
 -- 5
 meh :: Monad m => [a] -> (a -> m b) -> m [b]
-meh [] f = return [] 
+meh [] f = return []
 meh (a:as) f = liftM2 (:) (f a) (meh as f)
 
 -- 6
