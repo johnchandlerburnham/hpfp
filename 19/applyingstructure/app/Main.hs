@@ -25,7 +25,7 @@ randomElement xs = do
 shortGen :: IO [Char]
 shortGen = replicateM 7 $ randomElement alphaNum
 
-saveURI :: R.Connection -> BC.ByteString -> BC.ByteString 
+saveURI :: R.Connection -> BC.ByteString -> BC.ByteString
         -> IO (Either R.Reply R.Status)
 saveURI conn shortURI uri = R.runRedis conn $ R.set shortURI uri
 
@@ -34,7 +34,7 @@ getURI :: R.Connection -> BC.ByteString
 getURI conn shortURI = R.runRedis conn $ R.get shortURI
 
 linkShort :: String -> String
-linkShort short = concat 
+linkShort short = concat
   [ "<a href=\""
   , short
   , "\">Copy and paste your short URL</a>"
@@ -100,7 +100,7 @@ app rConn = do
         Just bs -> html $ shortFound $ TL.fromStrict $ decodeUtf8 bs
 
 main :: IO ()
-main = do 
+main = do
   rConn <- R.connect R.defaultConnectInfo
   scotty 3000 (app rConn)
 
