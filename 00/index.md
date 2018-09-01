@@ -1,9 +1,6 @@
 ---
 title: "Notes: Haskell Programming from First Principles by Chris Allen & Julie
 Moronuki"
-author: jcb
-date: 2017-11-01
-tags: hpfp, notes, haskell
 ---
 
 ![](/images/hpfp-cover.png)
