@@ -1,4 +1,3 @@
---24/parselog/src/ParseLog.hs
 module ParseLog where
 
 import Data.Char (isSpace)
@@ -28,9 +27,9 @@ newtype Activity = Activity String deriving (Eq, Ord)
 instance Show Log where show (Log es) = concat $ intersperse "\n" $ show <$> es
 
 instance Show Entry where
-  show (Entry (Left error) lines) = 
+  show (Entry (Left error) lines) =
     "# " ++ error ++ " -- InvalidDate\n" ++ concatMap show lines
-  show (Entry (Right date) lines) = 
+  show (Entry (Right date) lines) =
     "# " ++ show date ++ "\n" ++ concatMap show lines
 
 instance Show Line where
@@ -42,7 +41,7 @@ instance Show Activity where show (Activity a) = a
 isNewline :: Char -> Bool
 isNewline = (==) '\n'
 
-inlineSpace :: Parser () 
+inlineSpace :: Parser ()
 inlineSpace = skipMany $ satisfy (\x -> (isSpace x) && (not $ isNewline x))
 
 parseComment :: Parser String
@@ -52,11 +51,11 @@ endLine :: Parser Char
 endLine = inlineSpace >> (skipOptional parseComment) >> newline
 
 parseTimeOfDay :: Parser Time
-parseTimeOfDay = do 
+parseTimeOfDay = do
   hour <- fromIntegral <$> decimal
   minute <- option 0 $ colon >> fromIntegral <$> decimal
   second <- option 0 $ colon >> parseSecond
-  let time = T.makeTimeOfDayValid hour minute second 
+  let time = T.makeTimeOfDayValid hour minute second
   let raw = (show hour) ++ ":" ++ (show minute) ++ ":" ++ (show second)
   if (isJust time) then return (Right $ fromJust $ time) else return (Left raw)
 
@@ -72,7 +71,7 @@ parseAct = Activity <$> manyTill anyChar (try $ endLine)
 
 parseLine :: Parser Line
 parseLine = do
-    time <- parseTimeOfDay 
+    time <- parseTimeOfDay
     inlineSpace
     activity <- parseAct
     return $ Line time activity
@@ -82,7 +81,7 @@ parseDay = do
   year <- integer
   month <- char '-' >> fromIntegral <$> decimal
   day <- char '-' >> fromIntegral <$> decimal
-  let date = T.fromGregorianValid year month day  
+  let date = T.fromGregorianValid year month day
   let raw = (show year) ++ "-" ++ (show month) ++ "-" ++ (show day)
   if (isJust date) then return (Right $ fromJust $ date) else return (Left raw)
 
@@ -94,10 +93,10 @@ parseEntry = do
   endLine
   lines <- some $ parseLine
   return $ Entry date lines
- 
+
 parseLog :: Parser Log
 parseLog = do
-  many $ space <|> endLine 
+  many $ space <|> endLine
   log <- sepEndBy parseEntry (some $ space <|> endLine)
   eof
   return $ Log log
@@ -107,12 +106,11 @@ logBimorphism log = case (parseString parseLog mempty (show log)) of
   (Success log') -> log' == log
   (Failure e) -> False
 
-
 data UTCLog = UTCLog [(T.UTCTime, Activity)] deriving Show
 
 lineToUTC :: T.Day -> Line -> Maybe (T.UTCTime, Activity)
-lineToUTC _ (Line (Left _) act) = Nothing 
-lineToUTC day (Line (Right time) act) = 
+lineToUTC _ (Line (Left _) act) = Nothing
+lineToUTC day (Line (Right time) act) =
   Just (T.UTCTime day $ T.timeOfDayToTime time, act)
 
 entryToUTC :: Entry -> Maybe [(T.UTCTime, Activity)]
@@ -128,17 +126,16 @@ sortUTCLog (UTCLog log) = UTCLog $ sortBy (\(a, b) (c, d) -> compare a c) log
 activityTotals :: UTCLog -> M.Map Activity (T.NominalDiffTime, Int)
 activityTotals (UTCLog log) = go M.empty log' where
   log' = sortBy (\(a,b)(c,d)-> compare a c) log
-  go map [x] = map 
+  go map [x] = map
   go map ((t,a):x'@(t',a'):xs) = go map' (x':xs) where
     diff = T.diffUTCTime t' t
     f (time, count) = (time + diff, count + 1)
     map' = if M.member a map then M.adjust f a map else M.insert a (diff, 1) map
 
-avgActivityPerDay :: M.Map Activity (T.NominalDiffTime, Int) -> 
+avgActivityPerDay :: M.Map Activity (T.NominalDiffTime, Int) ->
                      M.Map Activity T.NominalDiffTime
-avgActivityPerDay m = M.map (\(t, c) -> t / (fromIntegral c)) m 
-  
-  
+avgActivityPerDay m = M.map (\(t, c) -> t / (fromIntegral c)) m
+
 main' :: String -> IO ()
 main' str = do
   file <- readFile str

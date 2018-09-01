@@ -1,4 +1,3 @@
---24/parsercombinators/src/PhoneNumber.hs
 module PhoneNumber where
 
 import Text.Trifecta
@@ -14,10 +13,10 @@ type LineNumber = Int
 parseNumberingPlanArea :: Parser NumberingPlanArea
 parseNumberingPlanArea = read <$> count 3 digit
 
-parseExchange :: Parser Exchange 
+parseExchange :: Parser Exchange
 parseExchange = read <$> count 3 digit
 
-parseLineNumber :: Parser LineNumber 
+parseLineNumber :: Parser LineNumber
 parseLineNumber = read <$> count 4 digit
 
 data PhoneNumber = PhoneNumber NumberingPlanArea Exchange LineNumber
@@ -28,14 +27,14 @@ parsePhone = do
   let notDigit = satisfy (not . isDigit)
   skipOptional $ try (char '1' >> notDigit)
   many $ notDigit
-  npa <- parseNumberingPlanArea 
-  many $ notDigit 
+  npa <- parseNumberingPlanArea
+  many $ notDigit
   exc <- parseExchange
-  many $ notDigit 
-  lnn <- parseLineNumber 
-  many $ notDigit 
-  return $ PhoneNumber npa exc lnn 
-  
- 
-  
-     
+  many $ notDigit
+  lnn <- parseLineNumber
+  many $ notDigit
+  return $ PhoneNumber npa exc lnn
+
+
+
+

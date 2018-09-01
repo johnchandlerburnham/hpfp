@@ -1,4 +1,3 @@
---24/parsercombinators/src/ParseInteger.hs
 module ParseInteger where
 
 import Text.Trifecta
@@ -17,9 +16,8 @@ base10Integer = go 0 where
     d <- parseDigit
     let a' = (10 * a + (digitToInt d))
     try (go a') <|> return (toInteger a')
-   
---3 
 
+--3
 base10Integer' :: Parser Integer
 base10Integer' = try (char '-' >> go 0) <|> base10Integer where
   go a = do

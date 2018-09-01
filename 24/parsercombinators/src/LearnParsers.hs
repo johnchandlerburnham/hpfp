@@ -1,4 +1,3 @@
---24/parsercombinators/src/LearnParser.hs
 module LearnParsers where
 
 import Text.Trifecta
@@ -56,9 +55,8 @@ oneTwoThree' :: Parser String
 oneTwoThree' =  choice [string "123", string "12", string "1"]
 
 oneTwoThree'' :: Parser String
-oneTwoThree'' = 
+oneTwoThree'' =
   char '1' >>= \x -> (char '2') >>= \x2 -> (char '3') >>= \x3 -> return [x,x2,x3]
-
 
 oneTwoThreeDo :: Parser String
 oneTwoThreeDo = do
