@@ -1,8 +1,5 @@
 ---
 title: "Notes (HPFP 23/31): State"
-author: jcb
-date: 2017-11-01
-tags: notes, haskell, hpfp
 ---
 
 # 23 State

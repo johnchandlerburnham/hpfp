@@ -1,4 +1,6 @@
-# Exercises for Chapter 24: Parsing Combinators
+---
+title: "Notes (HPFP 24/31): Parsing Combinators"
+---
 
 ## Exercises: Parsing Practice
 [see `parsingcombinators/src/LearnParsers.hs`](https://github.com/johnchandlerburnham/hpfp/blob/master/24/parsercombinators/src/LearnParsers.hs)
