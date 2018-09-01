@@ -14,7 +14,7 @@ newtype Address = Address String deriving (Eq, Show)
 
 data Person = Person { humanName :: HumanName
                      , dogName :: DogName
-                     , address :: Address 
+                     , address :: Address
                      } deriving (Eq, Show)
 
 data Dog = Dog { dogsName :: DogName
@@ -22,8 +22,8 @@ data Dog = Dog { dogsName :: DogName
                } deriving (Eq, Show)
 
 pers :: Person
-pers = Person (HumanName "Big Bird") 
-              (DogName "Barkley") 
+pers = Person (HumanName "Big Bird")
+              (DogName "Barkley")
               (Address "Sesame Street")
 
 chris :: Person

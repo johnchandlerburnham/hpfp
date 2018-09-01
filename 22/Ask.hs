@@ -1,4 +1,3 @@
---22/Ask.hs
 module Ask where
 
 import Control.Monad

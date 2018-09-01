@@ -1,4 +1,3 @@
---22/ReadingComprehension.hs
 {-# LANGUAGE InstanceSigs #-}
 module ReadingComprehension where
 

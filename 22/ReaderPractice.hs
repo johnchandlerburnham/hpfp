@@ -1,4 +1,3 @@
---22/ReaderPractice.hs
 module ReaderPractice where
 
 import Control.Applicative
@@ -21,13 +20,13 @@ z' :: Integer -> Maybe Integer
 z' n = lookup n $ zip x z
 
 x1 :: Maybe (Integer, Integer)
-x1 = (,) <$> xs <*> ys 
+x1 = (,) <$> xs <*> ys
 
 x2 :: Maybe (Integer, Integer)
 x2 = (,) <$> ys <*> zs
 
 x3 :: Integer -> (Maybe Integer, Maybe Integer)
-x3 n = (,) zn zn where zn = z' n 
+x3 n = (,) zn zn where zn = z' n
 
 summed :: Num c => (c, c) -> c
 summed (x, y) = x + y
@@ -56,5 +55,5 @@ main = do
   print $ foldr (&&) True $ sequA 7
 -- 2
   print $ fromMaybe [] $ sequA <$> s'
--- 3  
+-- 3
   print $ fromMaybe False $ bolt <$> ys

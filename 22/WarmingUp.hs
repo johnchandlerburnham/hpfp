@@ -1,4 +1,3 @@
---22/WarmingUp.hs
 module WarmingUp where
 
 import Data.Char
@@ -30,7 +29,7 @@ tupledBind str = cap <$> rev >>= (,) $ str
 tupledBind' :: [Char] -> ([Char], [Char])
 tupledBind' = rev >>= (\x -> cap >>= \y -> return (x, y))
 
-{- 
+{-
 instance Monad (-> r) where
   return = const
   (>>=) x f = \r -> f (x r) r
