@@ -1,4 +1,3 @@
---21/traversable/src/TraversableInstances.hs
 module TraversableInstances where
 
 import Test.QuickCheck
@@ -16,7 +15,7 @@ instance Foldable Identity where
   foldMap f (Identity a) = (f a)
 
 instance Traversable Identity where
-  traverse f (Identity a) = fmap Identity (f a)  
+  traverse f (Identity a) = fmap Identity (f a)
 
 instance Arbitrary a => Arbitrary (Identity a) where
   arbitrary = Identity <$> arbitrary
@@ -98,7 +97,7 @@ instance Foldable (Three a b) where
   foldMap f (Three a b c) = (f c)
 
 instance Traversable (Three a b) where
-  traverse f (Three a b c) = fmap (Three a b) (f c)  
+  traverse f (Three a b c) = fmap (Three a b) (f c)
 
 instance (Arbitrary a, Arbitrary b, Arbitrary c) => Arbitrary (Three a b c) where
   arbitrary = Three <$> arbitrary <*> arbitrary <*> arbitrary
@@ -164,7 +163,7 @@ instance (Eq a, Eq b) => EqProp (Bigger a b) where
 -- Testing
 type IIL = (Int, Int, [Int])
 
-main = do 
+main = do
   quickBatch (traversable (undefined :: Identity IIL))
   quickBatch (traversable (undefined :: Constant IIL IIL))
   quickBatch (traversable (undefined :: Optional IIL))
