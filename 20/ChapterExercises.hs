@@ -1,4 +1,3 @@
---20/ChapterExercises.hs
 module ChapterExercises where
 
 import Data.Foldable
@@ -17,16 +16,16 @@ instance Foldable (Two a) where
   foldMap f (Two a b) = f b
 
 -- 3
-data Three a b c = Three a b c 
+data Three a b c = Three a b c
 
 instance Foldable (Three a b) where
   foldMap f (Three a b c) = f c
 
--- 4  
+-- 4
 data Three' a b = Three' a b b
 
 instance Foldable (Three' a) where
-  foldMap f (Three' a b c) = (f b) <> (f c) 
+  foldMap f (Three' a b c) = (f b) <> (f c)
 
 -- 5
 data Four' a b = Four' a b b b
@@ -36,7 +35,7 @@ instance Foldable (Four' a) where
 
 
 --- filterF
-filterF :: (Applicative f, Foldable t, Monoid (f a)) 
+filterF :: (Applicative f, Foldable t, Monoid (f a))
            => (a -> Bool) -> t a -> f a
 filterF f xs = foldMap (g f) xs where
-  g f a = if f a then pure a else mempty 
+  g f a = if f a then pure a else mempty
