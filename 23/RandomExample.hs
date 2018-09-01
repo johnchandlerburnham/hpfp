@@ -1,4 +1,3 @@
---23/RandomExample.hs
 module RandomExample where
 
 import System.Random
@@ -6,7 +5,7 @@ import Control.Applicative (liftA3)
 import Control.Monad (replicateM)
 import Control.Monad.Trans.State
 
-data Die = DieOne | DieTwo | DieThree | DieFour | DieFive | DieSix 
+data Die = DieOne | DieTwo | DieThree | DieFour | DieFive | DieSix
            deriving (Eq, Show)
 
 {-
@@ -26,7 +25,7 @@ intToDie n =
 -- partial functions are baaaad
 
 intToDie :: Int -> Die
-intToDie n = 
+intToDie n =
   case ((n `mod` 6)) of
     1 -> DieOne
     2 -> DieTwo
@@ -57,35 +56,35 @@ rollDieThreeTimes' = liftA3 (,,) rollDie rollDie rollDie
 nDie :: Int -> State StdGen [Die]
 nDie n = replicateM n rollDie
 
-rollsToGetTwenty :: StdGen -> Int 
+rollsToGetTwenty :: StdGen -> Int
 rollsToGetTwenty g = go 0 0 g
-  where 
+  where
     go :: Int -> Int -> StdGen -> Int
     go sum count gen
       | sum >= 20 = count
-      | otherwise = 
+      | otherwise =
         let (die, nextGen) = randomR (1, 6) gen
         in go (sum + die) (count + 1) nextGen
 
 -- 1
 rollsToGetN :: Int -> StdGen -> Int
-rollsToGetN n g= go 0 0 n g 
-  where 
+rollsToGetN n g= go 0 0 n g
+  where
     go :: Int -> Int -> Int -> StdGen -> Int
     go sum count max gen
       | sum >= max = count
-      | otherwise = 
+      | otherwise =
         let (die, nextGen) = randomR (1, 6) gen
         in go (sum + die) (count + 1) max nextGen
 
 -- 2
 rollsCountLogged :: Int -> StdGen -> (Int, [Die])
-rollsCountLogged n g = go 0 0 [] n g 
-  where 
+rollsCountLogged n g = go 0 0 [] n g
+  where
     go :: Int -> Int -> [Die] -> Int -> StdGen -> (Int, [Die])
     go sum count log max gen
       | sum >= max = (count, log)
-      | otherwise = 
+      | otherwise =
         let (die, nextGen) = randomR (1, 6) gen
         in go (sum + die) (count + 1) ((intToDie die):log) max nextGen
 

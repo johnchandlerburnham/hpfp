@@ -31,7 +31,7 @@ fizzbuzzList' list = execState (mapM_ addResult' list) DL.empty
 addResult' :: Integer -> State (DL.DList String) ()
 addResult' n = do
   xs <- get
-  put (DL.snoc xs (fizzBuzz n)) 
+  put (DL.snoc xs (fizzBuzz n))
 
 main :: IO ()
 main = mapM_ putStrLn $ fizzbuzzList' [1..100]
