@@ -10,12 +10,6 @@ tags: hpfp, notes, haskell
 
 # Contents
 
-----
--  Completed
--  *In Progress*
--  Planned
-----
-
 - [Chapter 01: All You Need is Lambda](/projects/hpfp/01)
 - [Chapter 02: Hello, Haskell!](/projects/hpfp/02)
 - [Chapter 03: Strings](/projects/hpfp/03)
@@ -28,25 +22,25 @@ tags: hpfp, notes, haskell
 - [Chapter 10: Folding lists](/projects/hpfp/10)
 - [Chapter 11: Algebraic datatypes](/projects/hpfp/11)
 - [Chapter 12: Signaling adversity](/projects/hpfp/12)
-- *[Chapter 13: Building Projects](/projects/hpfp/13)*
-- *[Chapter 14: Testing](/projects/hpfp/14)*
-- *[Chapter 15: Monoid, Semigroup](/projects/hpfp/15)*
-- *[Chapter 16: Functor](/projects/hpfp/16)*
-- *[Chapter 17: Applicative](/projects/hpfp/17)*
-- *[Chapter 18: Monad](/projects/hpfp/18)*
-- *[Chapter 19: Applying Structure](/projects/hpfp/19)*
-- *[Chapter 20: Foldable](/projects/hpfp/20)*
-- *[Chapter 21: Traversable](/projects/hpfp/21)*
-- *[Chapter 22: Reader](/projects/hpfp/22)*
-- *[Chapter 23: State](/projects/hpfp/23)*
-- *[Chapter 24: Parser Combinators](/projects/hpfp/24)*
-- *[Chapter 25: Composing type](/projects/hpfp/25)*
-- *[Chapter 26: Monad transformers](/projects/hpfp/26)*
-- *[Chapter 27: Nonstrictness](/projects/hpfp/27)*
-- *[Chapter 28: Basic libraries](/projects/hpfp/28)*
-- *[Chapter 29: IO](/projects/hpfp/29)*
-- Chapter 30: When things go wrong
-- Chapter 31: Final project
+- [Chapter 13: Building Projects](/projects/hpfp/13)
+- [Chapter 14: Testing](/projects/hpfp/14)
+- [Chapter 15: Monoid, Semigroup](/projects/hpfp/15)
+- [Chapter 16: Functor](/projects/hpfp/16)
+- [Chapter 17: Applicative](/projects/hpfp/17)
+- [Chapter 18: Monad](/projects/hpfp/18)
+- [Chapter 19: Applying Structure](/projects/hpfp/19)
+- [Chapter 20: Foldable](/projects/hpfp/20)
+- [Chapter 21: Traversable](/projects/hpfp/21)
+- [Chapter 22: Reader](/projects/hpfp/22)
+- [Chapter 23: State](/projects/hpfp/23)
+- [Chapter 24: Parser Combinators](/projects/hpfp/24)
+- [Chapter 25: Composing type](/projects/hpfp/25)
+- [Chapter 26: Monad transformers](/projects/hpfp/26)
+- [Chapter 27: Nonstrictness](/projects/hpfp/27)
+- [Chapter 28: Basic libraries](/projects/hpfp/28)
+- [Chapter 29: IO](/projects/hpfp/29)
+- [Chapter 30: When things go wrong](/projects/hpfp/30)
+- [Chapter 31: Final project](/projects/hpfp/31)
 
 # Preliminary Remarks
 
