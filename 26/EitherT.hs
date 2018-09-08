@@ -1,4 +1,3 @@
---26/EitherT.hs
 module EitherT where
 
 import Control.Monad.Trans
@@ -36,3 +35,4 @@ swapEitherT (EitherT ema) = EitherT $ swapEither <$> ema
 
 eitherT :: Monad m => (a -> m c) -> (b -> m c) -> EitherT a m b -> m c
 eitherT fac fbc (EitherT mab) = mab >>= (either fac fbc)
+

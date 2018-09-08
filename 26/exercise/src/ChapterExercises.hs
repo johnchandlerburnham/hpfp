@@ -7,12 +7,12 @@ import Control.Monad.Trans.State
 import Control.Monad.Trans.Maybe
 import Data.Functor.Identity
 
--- 1 
-rDec :: Num a => Reader a a 
+-- 1
+rDec :: Num a => Reader a a
 rDec = ReaderT $ \x -> return (x - 1)
 
 -- 2
-rDecPF :: Num a => Reader a a 
+rDecPF :: Num a => Reader a a
 rDecPF = reader $ decrement where
   decrement = (flip (-)) 1
 
@@ -29,13 +29,13 @@ printGreeting :: Show a => a -> IO ()
 printGreeting r = putStrLn $ "Hi: " ++ show r
 
 rPrintAndInc :: (Num a, Show a) => ReaderT a IO a
-rPrintAndInc = ReaderT $ \r -> (liftIO $ printGreeting r) >> return (r + 1) 
+rPrintAndInc = ReaderT $ \r -> (liftIO $ printGreeting r) >> return (r + 1)
 
 -- 6
 sPrintIncAccum :: (Num a, Show a) => StateT a IO String
 sPrintIncAccum = StateT $ \s -> do
   liftIO $ printGreeting s
-  return (show s, s + 1)  
+  return (show s, s + 1)
 
 -- Fix the code
 isValid :: String -> Bool

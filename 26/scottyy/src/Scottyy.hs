@@ -17,6 +17,6 @@ main = scotty 3000 $ do
   get "/:word" $ do
     beam <- param "word"
     let liftStateT m = StateT $ \s -> m >>= \a -> return (a, s)
-    (ActionT . (ExceptT . fmap Right) . liftReaderT . liftStateT) 
+    (ActionT . (ExceptT . fmap Right) . liftReaderT . liftStateT)
       (putStrLn "hello")
     html $ mconcat ["<h1>Scotty, ", beam, " me up!</h1>"]

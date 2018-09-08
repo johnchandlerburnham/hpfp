@@ -1,5 +1,5 @@
 ---
-title: "Notes (HPFP 25/31): Composting types"
+title: "Notes (HPFP 25/31): Composing types"
 ---
 
 # 25 Composing types

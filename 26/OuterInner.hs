@@ -1,4 +1,3 @@
---26/OuterInner.hs
 module OuterInner where
 
 import Control.Monad.Trans.Except
