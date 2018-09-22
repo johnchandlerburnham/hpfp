@@ -1,5 +1,5 @@
 ---
-title: "Notes (HPFP 26/31): Monad Transformers
+title: "Notes (HPFP 26/31): Monad Transformers"
 ---
 
 # 26 Monad Transformers
