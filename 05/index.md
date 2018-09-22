@@ -112,7 +112,7 @@ clearer, but in my opinion, these cases are exceptions.
 
 ## 5.5 Polymorphism
 
-Greek words are everywheer in Haskell-land. Greek and Latin, especially in the
+Greek words are everywhere in Haskell-land. Greek and Latin, especially in the
 sciences, act like a kind of conceptual assembly language that allows you to
 build words for complex ideas out of concrete concepts. But if you don't know
 the roots, the vivid metaphor embedded in the word becomes murky and unclear. It
