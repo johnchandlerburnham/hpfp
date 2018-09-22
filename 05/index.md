@@ -112,13 +112,12 @@ clearer, but in my opinion, these cases are exceptions.
 
 ## 5.5 Polymorphism
 
-Greek words abound in Haskell jargon. If we lived in an age that believed in
-proper education you would already know them. Greek and Latin, especially in the
+Greek words are everywheer in Haskell-land. Greek and Latin, especially in the
 sciences, act like a kind of conceptual assembly language that allows you to
 build words for complex ideas out of concrete concepts. But if you don't know
-the roots, the usually quite vivid metaphor embedding in the word becomes murky
-and unclear. It would be very confusing if we used English for this, because
-then the same word would be used for both substantive and metaphoric meaning.
+the roots, the vivid metaphor embedded in the word becomes murky and unclear. It
+would be very confusing if we used English for this, because then the same word
+would be used for both substantive and metaphoric meaning.
 
 Let's take the word "Polymorphism" for example. This breaks apart into three
 Greek roots:
@@ -128,7 +127,7 @@ Greek roots:
 - "-ism", from the Greek "-ισμός", which is a suffix forming abstract nouns.
 
 So the word means literally "The abstract property of having many forms or
-types." Or "many-formed-ness", in short.
+types." Or, maybe more tersely: "many-formed-ness".
 
 Some important Greek roots:
 
