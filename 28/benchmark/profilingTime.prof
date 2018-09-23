@@ -1,0 +1,29 @@
+	Sat Sep 22 19:36 2018 Time and Allocation Profiling Report  (Final)
+
+	   profilingTime +RTS -P -RTS
+
+	total time  =        0.17 secs   (169 ticks @ 1000 us, 1 processor)
+	total alloc = 792,054,816 bytes  (excludes profiling overheads)
+
+COST CENTRE MODULE SRC                                  %time %alloc  ticks     bytes
+
+g           Main   src/profilingTime.hs:(10,1)-(12,14)   90.5   90.9    153 720003632
+f           Main   src/profilingTime.hs:(5,1)-(7,14)      9.5    9.1     16  72011856
+
+
+                                                                                          individual      inherited
+COST CENTRE  MODULE                SRC                                 no.     entries  %time %alloc   %time %alloc  ticks     bytes
+
+MAIN         MAIN                  <built-in>                          112          0    0.0    0.0   100.0  100.0      0       648
+ CAF         Main                  <entire-module>                     223          0    0.0    0.0   100.0  100.0      0       208
+  f          Main                  src/profilingTime.hs:(5,1)-(7,14)   226          1    9.5    9.1     9.5    9.1     16  72000264
+  g          Main                  src/profilingTime.hs:(10,1)-(12,14) 228          1   90.5   90.9    90.5   90.9    153 720000304
+  main       Main                  src/profilingTime.hs:(15,1)-(17,3)  224          1    0.0    0.0     0.0    0.0      0        40
+ CAF         GHC.Conc.Signal       <entire-module>                     218          0    0.0    0.0     0.0    0.0      0       640
+ CAF         GHC.IO.Encoding       <entire-module>                     207          0    0.0    0.0     0.0    0.0      0      2768
+ CAF         GHC.IO.Encoding.Iconv <entire-module>                     205          0    0.0    0.0     0.0    0.0      0       200
+ CAF         GHC.IO.Handle.FD      <entire-module>                     197          0    0.0    0.0     0.0    0.0      0     34704
+ CAF         GHC.IO.Handle.Text    <entire-module>                     195          0    0.0    0.0     0.0    0.0      0        88
+ main        Main                  src/profilingTime.hs:(15,1)-(17,3)  225          0    0.0    0.0     0.0    0.0      0        32
+  f          Main                  src/profilingTime.hs:(5,1)-(7,14)   227          0    0.0    0.0     0.0    0.0      0     11592
+  g          Main                  src/profilingTime.hs:(10,1)-(12,14) 229          0    0.0    0.0     0.0    0.0      0      3328

@@ -1,0 +1,29 @@
+	Sat Sep 22 19:43 2018 Time and Allocation Profiling Report  (Final)
+
+	   cafSaturation3 +RTS -p -RTS
+
+	total time  =        0.00 secs   (0 ticks @ 1000 us, 1 processor)
+	total alloc =     209,408 bytes  (excludes profiling overheads)
+
+COST CENTRE MODULE           SRC                                 %time %alloc
+
+CAF         GHC.IO.Handle.FD <entire-module>                       0.0   16.6
+CAF         GHC.IO.Encoding  <entire-module>                       0.0    1.3
+main        Main             src/cafSaturation3.hs:(7,1)-(8,32)    0.0   39.3
+incdInts    Main             src/cafSaturation3.hs:4:1-19          0.0   42.1
+
+
+                                                                                         individual      inherited
+COST CENTRE  MODULE                SRC                                no.     entries  %time %alloc   %time %alloc
+
+MAIN         MAIN                  <built-in>                         112          0    0.0    0.3     0.0  100.0
+ CAF         Main                  <entire-module>                    223          0    0.0    0.0     0.0   76.6
+  incdInts   Main                  src/cafSaturation3.hs:4:1-19       226          1    0.0    0.0     0.0    0.0
+  main       Main                  src/cafSaturation3.hs:(7,1)-(8,32) 224          1    0.0   34.5     0.0   76.6
+   incdInts  Main                  src/cafSaturation3.hs:4:1-19       227          0    0.0   42.1     0.0   42.1
+ CAF         GHC.Conc.Signal       <entire-module>                    218          0    0.0    0.3     0.0    0.3
+ CAF         GHC.IO.Encoding       <entire-module>                    207          0    0.0    1.3     0.0    1.3
+ CAF         GHC.IO.Encoding.Iconv <entire-module>                    205          0    0.0    0.1     0.0    0.1
+ CAF         GHC.IO.Handle.FD      <entire-module>                    197          0    0.0   16.6     0.0   16.6
+ CAF         GHC.IO.Handle.Text    <entire-module>                    195          0    0.0    0.0     0.0    0.0
+ main        Main                  src/cafSaturation3.hs:(7,1)-(8,32) 225          0    0.0    4.7     0.0    4.7

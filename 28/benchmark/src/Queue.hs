@@ -1,6 +1,6 @@
 module Main where
 
-import Criterion.Main  
+import Criterion.Main
 import qualified Data.Sequence as S
 import Data.Maybe (fromJust)
 
@@ -13,9 +13,9 @@ qfromList :: [a] -> Queue a
 qfromList l = Queue l []
 
 class Pushable q where
-  push :: a -> q a -> q a 
+  push :: a -> q a -> q a
   pop :: q a -> Maybe (a, q a)
-  
+
 instance Pushable Queue where
   push x (Queue es ds) = Queue (x:es) ds
   pop (Queue [] []) = Nothing
@@ -46,9 +46,8 @@ testList = [1..10000]
 
 pushPopTest a n q = fromJust $ applyN n (pushPop a) (return q)
 
-
 main :: IO ()
-main = defaultMain 
+main = defaultMain
   [ bench "pushPop list" $ whnf (pushPopTest 0 500000) testList
   , bench "pushPop queue" $ whnf (pushPopTest 0 500000) (qfromList testList)
   , bench "pushPop seq" $ whnf (pushPopTest 0 500000) (S.fromList testList)

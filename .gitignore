@@ -1,2 +1,5 @@
 */*/.stack-work/*
 *.swp
+*.o
+*.hi
+*.aux

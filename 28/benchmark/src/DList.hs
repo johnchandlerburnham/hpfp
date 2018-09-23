@@ -30,7 +30,7 @@ append :: DList a -> DList a -> DList a
 append x y = DL (unDL x . unDL y)
 {-# INLINE append #-}
 
-schlemiel :: Int -> [Int] 
+schlemiel :: Int -> [Int]
 schlemiel i = go i []
   where
     go 0 xs = xs
@@ -43,7 +43,7 @@ constructDlist i = toList $ go i empty
     go n xs = go (n - 1) (singleton n `append` xs)
 
 main :: IO ()
-main = defaultMain 
+main = defaultMain
   [ bench "concat list" $ whnf schlemiel 123456
   , bench "concat dlist" $ whnf constructDlist 123456
   ]

@@ -1,0 +1,26 @@
+	Sat Sep 22 19:41 2018 Time and Allocation Profiling Report  (Final)
+
+	   cafSaturation +RTS -p -RTS
+
+	total time  =        0.33 secs   (330 ticks @ 1000 us, 1 processor)
+	total alloc = 871,346,856 bytes  (excludes profiling overheads)
+
+COST CENTRE MODULE SRC                                 %time %alloc
+
+main        Main   src/cafSaturation.hs:(7,1)-(13,29)   55.8    0.0
+incdInts    Main   src/cafSaturation.hs:4:1-25          44.2  100.0
+
+
+                                                                                         individual      inherited
+COST CENTRE  MODULE                SRC                                no.     entries  %time %alloc   %time %alloc
+
+MAIN         MAIN                  <built-in>                         112          0    0.0    0.0   100.0  100.0
+ CAF         Main                  <entire-module>                    223          0    0.0    0.0   100.0  100.0
+  incdInts   Main                  src/cafSaturation.hs:4:1-25        226          1   44.2  100.0    44.2  100.0
+  main       Main                  src/cafSaturation.hs:(7,1)-(13,29) 224          1   55.8    0.0    55.8    0.0
+ CAF         GHC.Conc.Signal       <entire-module>                    218          0    0.0    0.0     0.0    0.0
+ CAF         GHC.IO.Encoding       <entire-module>                    208          0    0.0    0.0     0.0    0.0
+ CAF         GHC.IO.Encoding.Iconv <entire-module>                    206          0    0.0    0.0     0.0    0.0
+ CAF         GHC.IO.Handle.FD      <entire-module>                    198          0    0.0    0.0     0.0    0.0
+ CAF         GHC.IO.Handle.Text    <entire-module>                    196          0    0.0    0.0     0.0    0.0
+ main        Main                  src/cafSaturation.hs:(7,1)-(13,29) 225          0    0.0    0.0     0.0    0.0

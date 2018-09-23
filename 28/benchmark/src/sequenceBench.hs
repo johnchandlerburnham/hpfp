@@ -16,7 +16,7 @@ seqs' :: S.Seq Int
 seqs' = S.fromList [1..100000]
 
 main :: IO ()
-main = defaultMain 
+main = defaultMain
   [ bench "concatenate lists" $ nf mconcat lists
   , bench "concatenate sequences" $ nf mconcat seqs
   , bench "indexing lists" $ whnf (\xs -> xs !! 9001) lists'
