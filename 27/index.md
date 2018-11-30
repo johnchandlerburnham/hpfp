@@ -1,5 +1,5 @@
 ---
-title: "Notes (HPFP 27/31): Nonstrictness
+title: "Notes (HPFP 27/31): Nonstrictness"
 ---
 
 # 27 Nonstrictness
