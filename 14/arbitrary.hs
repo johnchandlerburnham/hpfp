@@ -43,7 +43,7 @@ sumGenEqual :: (Arbitrary a, Arbitrary b) => Gen (Sum a b)
 sumGenEqual = do
   a <- arbitrary
   b <- arbitrary
-  oneof [return $ First a, return $ Second b] 
+  oneof [return $ First a, return $ Second b]
 
 sumGenCharInt :: Gen (Sum Char Int)
 sumGenCharInt = sumGenEqual

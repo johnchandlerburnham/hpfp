@@ -1,5 +1,5 @@
 ---
-title: "Notes (HPFP 28/31): Basic Libraries
+title: "Notes (HPFP 28/31): Basic Libraries"
 ---
 
 # 28 Basic Libraries
