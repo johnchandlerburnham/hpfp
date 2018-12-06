@@ -1,0 +1,43 @@
+name:                fingerd
+version:             0.1.0.0
+-- synopsis:
+-- description:
+homepage:            https://github.com/johnchandlerburnham/fingerd#readme
+license:             BSD3
+license-file:        LICENSE
+author:              John C. Burnham
+maintainer:          jcb@johnchandlerburnham.com
+copyright:           2018 John C. Burnham
+category:            Web
+build-type:          Simple
+cabal-version:       >=1.10
+extra-source-files:  README.md
+
+executable debug
+  ghc-options:         -Wall
+  main-is:             Debug.hs
+  default-language:    Haskell2010
+  build-depends:       base >= 4.7 && < 5
+                     , network
+
+executable finger-useradd
+  ghc-options:         -Wall
+  main-is:             src/UserAdd.hs
+  default-language:    Haskell2010
+  build-depends:       base >= 4.7 && < 5
+                     , bytestring
+                     , network
+                     , raw-strings-qq
+                     , sqlite-simple
+                     , text
+
+executable fingerd
+  hs-source-dirs:      src
+  main-is:             Main.hs
+  default-language:    Haskell2010
+  build-depends:       base >= 4.7 && < 5
+                     , bytestring
+                     , network
+                     , raw-strings-qq
+                     , sqlite-simple
+                     , text
