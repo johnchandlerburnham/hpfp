@@ -1,9 +1,3 @@
----
-title: "Notes (HPFP 02/31): Hello Haskell"
-author: jcb
-date: 2017-11-01
----
-
 # 2 Hello Haskell!
 
 ## 2.1 Hello, Haskell
@@ -315,7 +309,7 @@ This seems mysterious, but will make sense in later chapters.
 
 ### Exercises: Heal the Sick
 
-[see `HealTheSick.hs`](https://github.com/johnchandlerburnham/hpfp/blob/master/02/HealTheSick.hs)
+[See `HealTheSick.hs`.](/02/HealTheSick.hs)
 
 ## 2.8 Arithmetic functions in Haskell
 
@@ -381,7 +375,7 @@ True
 So we have a choice to make. We want integer division to "round down", but
 when one of the arguments is negative, "down" can mean two different things.
 We have to decide if we want "down" to be toward `0`, in which case we'll
-choose `(-3)` in the above example, or towards $-\infty$, negative infinity,
+choose `(-3)` in the above example, or towards $`-\infty`$, negative infinity,
 in which case we choose `(-4)`.
 
 ```haskell
@@ -391,7 +385,7 @@ Prelude> quotRem (-13) 4
 (-3,-1)
 ```
 
-As we can see, `divMod` sets down as $-\infty$ and `quotRem` sets down
+As we can see, `divMod` sets down as $`-\infty`$ and `quotRem` sets down
 as `0`.
 
 The values for `mod` and `rem`, are just consequences of that choice,
@@ -563,9 +557,9 @@ fractional division for the latter.
 
 3. 3375
 
-4.  [see `MoreFun.hs`](https://github.com/johnchandlerburnham/hpfp/blob/master/02/MoreFun.hs)
-5.  [see `MoreFun.hs`](https://github.com/johnchandlerburnham/hpfp/blob/master/02/MoreFun.hs)
-6.  [see `MoreFun.hs`](https://github.com/johnchandlerburnham/hpfp/blob/master/02/MoreFun.hs)
+4.  [See `MoreFun.hs`](/02/MoreFun.hs)
+5.  Ibid.
+6.  Ibid.
 
 7.  `waxOff 10` returns `30`
 

@@ -1,9 +1,3 @@
----
-title: "Notes (HPFP 04/11): Basic Datatypes"
-author: jcb
-date: 2017-11-01
----
-
 # 4 Basic Datatypes
 
 ## 4.2 What are types?
@@ -188,8 +182,8 @@ Prelude>
 1. `Mood`
 2. `Blah` or `Woot`
 3. Woot is a value whose type is Mood, should be `changeMood :: Mood -> Mood`
-4. [see `Mood.hs`](https://github.com/johnchandlerburnham/hpfp/blob/master/04/Mood.hs)
-5. [see `Mood.hs`](https://github.com/johnchandlerburnham/hpfp/blob/master/04/Mood.hs)
+4. [See `Mood.hs`](/04/Mood.hs)
+5. Ibid.
 
 ## 4.4 Numeric types
 
@@ -476,13 +470,13 @@ This concept will be explained more in later chapters.
     d. Works returns `False`
     e. No instance `(Num Bool)`
 
-8. [see `Exercises.hs`](https://github.com/johnchandlerburnham/hpfp/blob/master/04/Exercises.hs)
-9. [see `Exercises.hs`](https://github.com/johnchandlerburnham/hpfp/blob/master/04/Exercises.hs)
-10. [see `Exercises.hs`](https://github.com/johnchandlerburnham/hpfp/blob/master/04/Exercises.hs)
+8. [See `Exercises.hs`.](/04/Exercises.hs)
+9. Ibid.
+10. Ibid.
 
 ### Correcting syntax
 
-[see `CorrectingSyntax.hs`](https://github.com/johnchandlerburnham/hpfp/blob/master/04/CorrectingSyntax.hs)
+[See `CorrectingSyntax.hs`.](/04/CorrectingSyntax.hs)
 
 ### Match the function names to their types
 

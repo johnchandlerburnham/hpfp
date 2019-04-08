@@ -1,9 +1,3 @@
----
-title: "Notes (HPFP 03/31): Strings"
-author: jcb
-date: 2017-11-01
----
-
 # 3 Strings
 
 **string**: a sequence of characters, usually representing text. The words
@@ -137,7 +131,7 @@ which means the same as `List Grocery`.
 
 ```haskell
 Prelude> :info []
-data [] a = [] | a : [a] 	-- Defined in ‘GHC.Types’
+data [] a = [] | a : [a] -- Defined in ‘GHC.Types’
 ```
 
 There's some overloading of `[]` here, since `[]` is representing both `List`
@@ -232,7 +226,6 @@ Prelude> ['f','o','o','b','a','r']
 "foobar"
 ```
 
-
 ## 3.4 Top-level versus local definitions
 
 ### Exercises: Scope
@@ -277,10 +270,8 @@ that `r` can access `area`'s arguments. However, `r` is now locally defined to
     b. `(!! 4)`
     c. `(drop 6)`
 
-2. [see `Exercise2.hs`](https://github.com/johnchandlerburnham/hpfp/blob/master/03/Exercise2.hs)
-3. [see `Exercise3.hs`](https://github.com/johnchandlerburnham/hpfp/blob/master/03/Exercise3.hs)
-4. [see `Exercise4.hs`](https://github.com/johnchandlerburnham/hpfp/blob/master/03/Exercise4.hs)
-5. [see `Exercise5.hs`](https://github.com/johnchandlerburnham/hpfp/blob/master/03/Exercise5.hs)
-6. [see `Exercise5.hs`](https://github.com/johnchandlerburnham/hpfp/blob/master/03/Exercise5.hs)
-
----
+2. [See `Exercise2.hs`](/03/Exercise2.hs)
+3. [See `Exercise3.hs`](/03/Exercise3.hs)
+4. [See `Exercise4.hs`](/03/Exercise4.hs)
+5. [See `Exercise5.hs`](/03/Exercise5.hs)
+6. [See `Exercise5.hs`](/03/Exercise5.hs)
