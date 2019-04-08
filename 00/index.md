@@ -10,37 +10,37 @@ tags: hpfp, notes, haskell
 
 # Contents
 
-- [Chapter 01: All You Need is Lambda](/projects/hpfp/01)
-- [Chapter 02: Hello, Haskell!](/projects/hpfp/02)
-- [Chapter 03: Strings](/projects/hpfp/03)
-- [Chapter 04: Basic Datatypes](/projects/hpfp/04)
-- [Chapter 05: Types](/projects/hpfp/05)
-- [Chapter 06: Typeclasses](/projects/hpfp/06)
-- [Chapter 07: More functional patterns](/projects/hpfp/07)
-- [Chapter 08: Recursion](/projects/hpfp/08)
-- [Chapter 09: Lists](/projects/hpfp/09)
-- [Chapter 10: Folding lists](/projects/hpfp/10)
-- [Chapter 11: Algebraic datatypes](/projects/hpfp/11)
-- [Chapter 12: Signaling adversity](/projects/hpfp/12)
-- [Chapter 13: Building Projects](/projects/hpfp/13)
-- [Chapter 14: Testing](/projects/hpfp/14)
-- [Chapter 15: Monoid, Semigroup](/projects/hpfp/15)
-- [Chapter 16: Functor](/projects/hpfp/16)
-- [Chapter 17: Applicative](/projects/hpfp/17)
-- [Chapter 18: Monad](/projects/hpfp/18)
-- [Chapter 19: Applying Structure](/projects/hpfp/19)
-- [Chapter 20: Foldable](/projects/hpfp/20)
-- [Chapter 21: Traversable](/projects/hpfp/21)
-- [Chapter 22: Reader](/projects/hpfp/22)
-- [Chapter 23: State](/projects/hpfp/23)
-- [Chapter 24: Parser Combinators](/projects/hpfp/24)
-- [Chapter 25: Composing type](/projects/hpfp/25)
-- [Chapter 26: Monad transformers](/projects/hpfp/26)
-- [Chapter 27: Nonstrictness](/projects/hpfp/27)
-- [Chapter 28: Basic libraries](/projects/hpfp/28)
-- [Chapter 29: IO](/projects/hpfp/29)
-- [Chapter 30: When things go wrong](/projects/hpfp/30)
-- [Chapter 31: Final project](/projects/hpfp/31)
+- [Chapter 01: All You Need is Lambda](/01)
+- [Chapter 02: Hello, Haskell!](/02)
+- [Chapter 03: Strings](/03)
+- [Chapter 04: Basic Datatypes](/04)
+- [Chapter 05: Types](/05)
+- [Chapter 06: Typeclasses](/06)
+- [Chapter 07: More functional patterns](/07)
+- [Chapter 08: Recursion](/08)
+- [Chapter 09: Lists](/09)
+- [Chapter 10: Folding lists](/10)
+- [Chapter 11: Algebraic datatypes](/11)
+- [Chapter 12: Signaling adversity](/12)
+- [Chapter 13: Building Projects](/13)
+- [Chapter 14: Testing](/14)
+- [Chapter 15: Monoid, Semigroup](/15)
+- [Chapter 16: Functor](/16)
+- [Chapter 17: Applicative](/17)
+- [Chapter 18: Monad](/18)
+- [Chapter 19: Applying Structure](/19)
+- [Chapter 20: Foldable](/20)
+- [Chapter 21: Traversable](/21)
+- [Chapter 22: Reader](/22)
+- [Chapter 23: State](/23)
+- [Chapter 24: Parser Combinators](/24)
+- [Chapter 25: Composing type](/25)
+- [Chapter 26: Monad transformers](/26)
+- [Chapter 27: Nonstrictness](/27)
+- [Chapter 28: Basic libraries](/28)
+- [Chapter 29: IO](/29)
+- [Chapter 30: When things go wrong](/30)
+- [Chapter 31: Final project](/31)
 
 # Preliminary Remarks
 
@@ -76,7 +76,4 @@ more great books for everyone in the future.
 Also, each chapter of HPFP has a list follow-up resources at the end. In my
 chapter notes, I'll link to separate posts containing my notes on each of these
 resources.
-
-Lastly, my GitHub repository containing my solutions for HPFP is
-[here](https://github.com/johnchandlerburnham/haskellbook).
 

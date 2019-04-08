@@ -56,37 +56,37 @@ computable functions using the lambda calculus.
 ## 1.4 The Structure of lambda terms
 
 **abstraction**: A lamda expression that represents a function. It can be
-written down with the folowing notation: $\lambda x.x$. Everything between the
-$\lambda$ and the $.$ is called the **head**, and the symbol in the head names
-the parameter of the function. After the $.$ is the **body**, and describes
+written down with the folowing notation: $`\lambda x.x`$. Everything between the
+$`\lambda`$ and the $`.`$ is called the **head**, and the symbol in the head names
+the parameter of the function. After the $`.`$ is the **body**, and describes
 what to do with the parameter, when the abstraction is applied. Terms that
 occur in both the **head** and the **body** are called *bound variables*, and
 symbols that only appear in the body are called *unbound*, or *free variables*.
 
 **currying**: Properly speaking, all abstractions have only single parameters.
 Functions with multiple paramters are expressed as a nested strucure of single-
-parameter functions. For example $\lambda xy.xy$ is more properly written as
-$\lambda x.(\lambda y.xy)$.
+parameter functions. For example $`\lambda xy.xy`$ is more properly written as
+$`\lambda x.(\lambda y.xy)`$.
 
 **application**: A lambda expression can be applied to some input like so:
-$((\lambda x.x) N)$. Following the reductions steps will evaluate the function
-described by $\lambda x.x$ with input parameter N.
+$`((\lambda x.x) N)`$. Following the reductions steps will evaluate the function
+described by $`\lambda x.x`$ with input parameter N.
 
 
 ## 1.5 Beta reduction
 
 **alpha equivalence**: Within an abstraction, the specific symbols in the head
 may be replaced by other symbols as long as the replacement is consistent and
-total. For example, in the abstraction $\lambda x.x$ the term $x$ in the head
-may be replaced with $y$, so long as all instance of $x$ in the body are also
-replaced with $y$. Thus, $\lambda x.x$, $\lambda y.y$, and any other
-expression of the form $\lambda n.n$ (for some $n$) are alpha equivalent.
+total. For example, in the abstraction $`\lambda x.x`$ the term $`x`$ in the head
+may be replaced with $`y`$, so long as all instance of $`x`$ in the body are also
+replaced with $`y`$. Thus, $`\lambda x.x`$, $`\lambda y.y`$, and any other
+expression of the form $`\lambda n.n`$ (for some $`n`$) are alpha equivalent.
 
 **beta reduction**: An abstraction is evaluated by replacing all its bound
 variables with the expression the abstraction is evaluated against (its input),
-and then removing the head of the abstraction. For example, $((\lambda x.x) N)$
-would be evaluated by replacing all $x$'s in the body with $N$ (yielding
-$\lambda x.N$) and then removing the head for the final output of $N$.
+and then removing the head of the abstraction. For example, $`((\lambda x.x) N)`$
+would be evaluated by replacing all $`x`$'s in the body with $`N`$ (yielding
+$`\lambda x.N`$) and then removing the head for the final output of $`N`$.
 
 ### Intermission: Equivalence Exercises (p.13)
 
@@ -101,11 +101,11 @@ and `y` with `n`.
 *beta reduction* (i.e. application of abstractions). This signals the end
 of the evaluation.
 
-**combinator**: A lambda term with no free variables. $\lambda x.x$ is a combinator,
-$\lambda x.xy$ is not.
+**combinator**: A lambda term with no free variables. $`\lambda x.x`$ is a combinator,
+$`\lambda x.xy`$ is not.
 
 **divergence**: If an expression can never reach *beta normal form*, it
-is said to diverge. For example, $(\lambda x.xx)(\lambda x.xx)$ diverges.
+is said to diverge. For example, $`(\lambda x.xx)(\lambda x.xx)`$ diverges.
 This corresponds to non-terminating function (an infinite loop).
 
 ## 1.11 Chapter Exercises (p.17)
