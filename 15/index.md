@@ -9,7 +9,7 @@
 
 ## 15.11 Madness
 
-[See `Madness.hs`](/15/exercises/src/Madness.hs)
+[See `Madness.hs`](/15/Madness.hs)
 
 ## 15.12 Better living through QuickCheck
 
