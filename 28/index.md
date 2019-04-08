@@ -1,29 +1,25 @@
----
-title: "Notes (HPFP 28/31): Basic Libraries"
----
-
 # 28 Basic Libraries
 
 ## 28.2 Benchmarking with Criterion
 
-[see `benchmark/src/Index.hs`](https://github.com/johnchandlerburnham/hpfp/blob/master/28/benchmark/src/Index.hs)
+[See `benchmark/src/Index.hs`](/28/benchmark/src/Index.hs)
 
 ## 28.3 Profiling your programs
 
-[see `benchmark/profilingTime.prof`](https://github.com/johnchandlerburnham/hpfp/blob/master/28/benchmark/profilingTime.prof)
-[see `benchmark/src/profilingSpace.ps`](https://github.com/johnchandlerburnham/hpfp/blob/master/28/benchmark/profilingSpace.ps)
+[See `benchmark/profilingTime.prof`](/28/benchmark/profilingTime.prof)
+[See `benchmark/src/profilingSpace.ps`](/28/benchmark/profilingSpace.ps)
 
 ## 28.4 Constant applicative forms
 
-[see `benchmark/cafSaturation.prof`](https://github.com/johnchandlerburnham/hpfp/blob/master/28/benchmark/cafSaturation.prof)
-[see `benchmark/cafSaturation2.prof`](https://github.com/johnchandlerburnham/hpfp/blob/master/28/benchmark/cafSaturation2.prof)
-[see `benchmark/cafSaturation3.prof`](https://github.com/johnchandlerburnham/hpfp/blob/master/28/benchmark/cafSaturation3.prof)
+[See `benchmark/cafSaturation.prof`](/28/benchmark/cafSaturation.prof)
+[See `benchmark/cafSaturation2.prof`](/28/benchmark/cafSaturation2.prof)
+[See `benchmark/cafSaturation3.prof`](/28/benchmark/cafSaturation3.prof)
 
 ## 28.5 Map
 
 ### Exercise: Benchmark Practice
 
-[see `benchmark/src/mapSetBench.hs`](https://github.com/johnchandlerburnham/hpfp/blob/master/28/benchmark/src/mapSetBench.hs)
+[See `benchmark/src/mapSetBench.hs`](/28/benchmark/src/mapSetBench.hs)
 
 ## 28.8 Vector
 
@@ -38,17 +34,17 @@ build:
   executable-profiling: true
 ```
 
-[see `benchmark/src/vectorMemory.hs`](https://github.com/johnchandlerburnham/hpfp/blob/master/28/benchmark/src/vectorMemory.hs)
+[See `benchmark/src/vectorMemory.hs`](/28/benchmark/src/vectorMemory.hs)
 
 ## 28.10 Chapter Exercises
 
 ### Difference List
 
-[see `benchmark/src/DList.hs`](https://github.com/johnchandlerburnham/hpfp/blob/master/28/benchmark/src/DList.hs)
+[See `benchmark/src/DList.hs`](/28/benchmark/src/DList.hs)
 
 ### A simple queue
 
-[see `benchmark/src/Queue.hs`](https://github.com/johnchandlerburnham/hpfp/blob/master/28/benchmark/src/Queue.hs)
+[See `benchmark/src/Queue.hs`](/28/benchmark/src/Queue.hs)
 
 ## 28.10 Chapter Exercises
 
@@ -61,10 +57,8 @@ build:
 6. [High Performance Haskell; Johan Tibell](http://johantibell.com/files/slides.pdf)
 7. Haskell Performance Patterns; Johan Tibell
 8. Faster persistent data structures through hashing; Johan Tibell
-9. Lazy Functional State Threads; John Launchbury and Simon
-Peyton Jones
-10. Write Haskell as fast as C: exploiting strictness, laziness and
-recursion; Don Stewart
+9. Lazy Functional State Threads; John Launchbury and Simon Peyton Jones
+10. Write Haskell as fast as C: exploiting strictness, laziness and recursion; Don Stewart
 11. Haskell as fast as C: A case study; Jan Stolarek
 12. Haskell FFT 11: Optimisation Part 1; Ian Ross
 13. Understanding the RealWorld; Edsko de Vries

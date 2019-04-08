@@ -1,9 +1,3 @@
----
-title: "Notes (HPFP 05/31): Types"
-author: jcb
-date: 2017-11-01
----
-
 # 5 Types
 
 The quote at the beginning of this chapter is an excerpt from the Wallace
@@ -296,9 +290,9 @@ interview](https://aphyr.com/posts/342-typing-the-technical-interview)
 
 ### Fix it
 
-1. [see Sing.hs](https://github.com/johnchandlerburnham/hpfp/blob/master/05/Sing.hs)
-2. [see Sing.hs](https://github.com/johnchandlerburnham/hpfp/blob/master/05/Sing.hs)
-3. [see Arith3Broken.hs](https://github.com/johnchandlerburnham/hpfp/blob/master/05/Arith3Broken.hs)
+1. [See Sing.hs](/05/Sing.hs)
+2. Ibid.
+3. [See Arith3Broken.hs](/05/Arith3Broken.hs)
 
 ### Type-Kwon-Do
 

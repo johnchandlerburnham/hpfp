@@ -1,7 +1,3 @@
----
-title: "Notes (HPFP 31/31): Final Project"
----
-
 # 31 Final Project
 
 ## 31.3 Exploring finger
@@ -75,6 +71,6 @@ INSERT INTO users VALUES(2,'john','/bin/zsh','/home/jcb','John Burnham','123-456
 
 ## 2
 
-see `src/UserAdd.hs`
+[See `src/UserAdd.hs`](/31/fingerd/src/UserAdd.hs)
 
 

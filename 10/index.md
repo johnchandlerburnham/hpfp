@@ -1,10 +1,3 @@
----
-title: "Notes (HPFP 10/31): Folding Lists"
-author: jcb
-date: 2017-11-01
-tags: hpfp, notes, haskell
----
-
 # 10 Folding lists
 
 Okay, so here's the thing about the term "catamorphism":
@@ -33,27 +26,27 @@ are catamorphisms.
 
 ### Exercises: Understanding folds
 
-[see `Folds.hs`](https://github.com/johnchandlerburnham/hpfp/blob/master/10/Folds.hs)
+[See `Folds.hs`](/10/Folds.hs)
 
 ### Exercises: Database Processing
 
-[see `DatabaseProcessing.hs`](https://github.com/johnchandlerburnham/hpfp/blob/master/10/DatabaseProcessing.hs)
+[See `DatabaseProcessing.hs`](/10/DatabaseProcessing.hs)
 
 ## 10.9 Scans
 
 ### Scans Exercises
 
-[see `Scans.hs`](https://github.com/johnchandlerburnham/hpfp/blob/master/10/Scans.hs)
+[See `Scans.hs`](/10/Scans.hs)
 
 ## 10.10 Chapter Exercises
 
 ### Warm-up and reveiw
 
-[see `WarmUp.hs`](https://github.com/johnchandlerburnham/hpfp/blob/master/10/WarmUp.hs)
+[See `WarmUp.hs`](/10/WarmUp.hs)
 
 ### Rewriting functions using folds
 
-[see `FunctionsUsingFolds.hs`](https://github.com/johnchandlerburnham/hpfp/blob/master/10/FunctionsUsingFolds.hs)
+[See `FunctionsUsingFolds.hs`](/10/FunctionsUsingFolds.hs)
 
 ## 10.12 Follow-up resources
 

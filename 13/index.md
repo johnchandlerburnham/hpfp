@@ -1,7 +1,3 @@
----
-title: "Notes (HPFP 13/31): Building Projects"
----
-
 # 13 Building Projects
 
 Since I'm building these projects on NixOS, I have to modify how to build with
@@ -65,10 +61,10 @@ add links to the files on Github.
 
 ### Modifying code
 
-1. [see `CipherIO.hs`](https://github.com/johnchandlerburnham/hpfp/blob/master/13/CipherIO.hs)
-2. [see `ExitSuccess.hs`](https://github.com/johnchandlerburnham/hpfp/blob/master/13/ExitSuccess.hs)
-3. [see `ExitSuccess.hs`](https://github.com/johnchandlerburnham/hpfp/blob/master/13/ExitSuccess.hs)
-4. [see `Person.hs`](https://github.com/johnchandlerburnham/hpfp/blob/master/13/Person.hs)
+1. [See `CipherIO.hs`](/13/CipherIO.hs)
+2. [See `ExitSuccess.hs`](/13/ExitSuccess.hs)
+3. [See `ExitSuccess.hs`](/13/ExitSuccess.hs)
+4. [See `Person.hs`](/13/Person.hs)
 
 ## 13.15 Follow-up resources
 

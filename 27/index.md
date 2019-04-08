@@ -1,7 +1,3 @@
----
-title: "Notes (HPFP 27/31): Nonstrictness"
----
-
 # 27 Nonstrictness
 
 ## 27.1 Laziness
@@ -126,12 +122,12 @@ Haskell](https://www.reddit.com/r/haskelltil/comments/2zlq40/sprint_in_ghci_lets
 
 ### Exercises: Evaluate
 
-[see `Evaluate.hs`](https://github.com/johnchandlerburnham/hpfp/blob/master/27/Evaluate.hs)
+[See `Evaluate.hs`](/27/Evaluate.hs)
 
 ## 27.14 Chapter Exercises
 
-[see `StrictList.hs`](https://github.com/johnchandlerburnham/hpfp/blob/master/27/StrictList.hs)
-[see `Exercise.hs`](https://github.com/johnchandlerburnham/hpfp/blob/master/27/Exercise.hs)
+[See `StrictList.hs`](/27/StrictList.hs)
+[See `Exercise.hs`](/27/Exercise.hs)
 
 ## 27.15
 

@@ -1,24 +1,17 @@
----
-title: "Notes (HPFP 14/31): Testing"
-author: jcb
-date: 2017-11-01
-tags: notes, haskell, hpfp
----
-
 # 14 Testing
 
 ## Intermission: Short Exercise
 
-[see `addition/Addition.hs`](https://github.com/johnchandlerburnham/hpfp/blob/master/14/addition/Addition.hs)
+[See `addition/Addition.hs`](/14/addition/Addition.hs)
 
 ## 14.7 Chapter Exercises
 
 ### Validating numbers into words
 
-[see `exercises/test/Spec.hs`](https://github.com/johnchandlerburnham/hpfp/blob/master/14/exercises/test/Spec.hs)
+[See `exercises/test/Spec.hs`](/14/exercises/test/Spec.hs)
 
 ### Using QuickCheck
-[see `exercises/test/Spec.hs`](https://github.com/johnchandlerburnham/hpfp/blob/master/14/exercises/test/Spec.hs)
+[See `exercises/test/Spec.hs`](/14/exercises/test/Spec.hs)
 
 ### Failure
 
@@ -35,18 +28,18 @@ sqrt 2 = 1.4142135, (sqrt 2) ^ 2 = 1.9999999
 
 ### Idempotence
 
-[see `exercises/test/Spec.hs`](https://github.com/johnchandlerburnham/hpfp/blob/master/14/exercises/test/Spec.hs)
+[See `exercises/test/Spec.hs`](/14/exercises/test/Spec.hs)
 
 ### Make a Gen random generator for the datatype
 
-[see `exercises/test/Spec.hs`](https://github.com/johnchandlerburnham/hpfp/blob/master/14/exercises/test/Spec.hs)
+[See `exercises/test/Spec.hs`](/14/exercises/test/Spec.hs)
 
 ### Hangman testing
 ~~Skipping this one, I think that this testing chapter is probably better
 understood after you understand what monads are. The reader here only barely
 has the tools to build something for which testing is important.~~
 
-[see `hangman`](https://github.com/johnchandlerburnham/hpfp/blob/master/14/hangman)
+[See `hangman`](/14/hangman)
 
 So I went back and did this exercise and my initial instinct has been confirmed.
 I found it  a pretty interesting exercise to build a `Gen
@@ -84,7 +77,7 @@ first.
 
 ### Validating ciphers
 
-[see `ciphers`](https://github.com/johnchandlerburnham/hpfp/blob/master/14/ciphers)
+[See `ciphers`](/14/ciphers)
 
 This uses a little `newtype` trick to make sure that the arbitrary strings we
 generate are all composed of lowercase characters. The reason being that the

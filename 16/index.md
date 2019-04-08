@@ -1,6 +1,3 @@
----
-title: "Notes (HPFP 16/31): Functor"
----
 # 16  Functor
 
 ## 16.4 Let's talk about 4, baby
@@ -14,11 +11,11 @@ title: "Notes (HPFP 16/31): Functor"
 ## 16.7 Commonly used functors
 
 ### Exercises: Heavy Lifting
-[see `HeavyLifting.hs`](https://github.com/johnchandlerburnham/hpfp/blob/master/16/HeavyLifting.hs)
+[See `HeavyLifting.hs`](/16/HeavyLifting.hs)
 
 ## 16.10 Exercises: Instances of Func
 
-[see `FunctorInstances.hs`](https://github.com/johnchandlerburnham/hpfp/blob/master/16/exercises/src/FunctorInstances.hs)
+[See `FunctorInstances.hs`](/16/exercises/src/FunctorInstances.hs)
 
 * 8. Trivial doesn't have anything inside it that fmap can apply a function to,
    fmap doesn't make sense for things with kind `*`, or rather fmap on type
@@ -28,7 +25,7 @@ title: "Notes (HPFP 16/31): Functor"
 
 ### Exercise: Possibly
 
-[see `PossiblyEither.hs`](https://github.com/johnchandlerburnham/hpfp/blob/master/16/PossiblyEither.hs)
+[See `PossiblyEither.hs`](/16/PossiblyEither.hs)
 
 ### Short Exercise
 
@@ -56,12 +53,10 @@ Determine if a valid Functor can be written for the datatype provided:
 
 Rearrange the arguments:
 
-[see `Rearrange.hs`](https://github.com/johnchandlerburnham/hpfp/blob/master/16/Rearrange.hs)
+[See `Rearrange.hs`](/16/Rearrange.hs)
 
 ## 16.19 Follow-up resources
 
 1. [Haskell Wikibook; The Functor class.](https://en.wikibooks.org/wiki/Haskell/The_Functor_class)
 2. Mark P. Jones; A system of constructor classes: overloading and implicit higher-order polymorphism.
 3. Gabriel Gonzalez; The functor design pattern.
-
----

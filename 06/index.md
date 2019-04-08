@@ -1,9 +1,3 @@
----
-title: "Notes (HPFP 06/31): Typeclasses"
-author: jcb
-date: 2017-11-01
----
-
 # 6 Typeclasses
 
 ## 6.2 What are typeclasses?
@@ -100,7 +94,7 @@ compiler flags that deal with warnings to begin with "W".
 
 ## Exercises: Eq Instances
 
-[see `EqInstances.hs`](https://github.com/johnchandlerburnham/hpfp/blob/master/06/EqInstances.hs)
+[See `EqInstances.hs`](/06/EqInstances.hs)
 
 ## Exercises: Tuple Experiment
 
@@ -126,11 +120,11 @@ compiler flags that deal with warnings to begin with "W".
 
 ### Does it typecheck?:
 
-[see `Exercises.hs`](https://github.com/johnchandlerburnham/hpfp/blob/master/06/Exercises.hs)
+[See `Exercises.hs`](/06/Exercises.hs)
 
 ### Given a datatype declaration, what can we do?
 
-[see `Datatype.hs`](https://github.com/johnchandlerburnham/hpfp/blob/master/06/Datatype.hs)
+[See `Datatype.hs`](/06/Datatype.hs)
 
 ### Match the types:
 
@@ -149,7 +143,7 @@ like e.g.  a `String`. We can't cast `i` upwards.
 
 ### Type-Kwon-Do: Electric Typealoo
 
-[see `TypeKwonDo.hs`](https://github.com/johnchandlerburnham/hpfp/blob/master/06/TypeKwonDo.hs)
+[See `TypeKwonDo.hs`](/06/TypeKwonDo.hs)
 
 ## 6.17 Follow-up resources
 

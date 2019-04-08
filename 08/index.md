@@ -47,7 +47,7 @@ remember](https://hackage.haskell.org/package/base-4.11.1.0/docs/Unsafe-Coerce.h
 
 ### Reviewing currying
 
-[see `ReviewingCurrying.hs`](https://github.com/johnchandlerburnham/hpfp/blob/master/08/ReviewingCurrying.hs)
+[See `ReviewingCurrying.hs`](/08/ReviewingCurrying.hs)
 
 1. `"woops mrow woohoo"`
 2. `"1 mrow haha"`
@@ -73,21 +73,20 @@ remember](https://hackage.haskell.org/package/base-4.11.1.0/docs/Unsafe-Coerce.h
     ```
 
 2.  see `RecursiveSum.hs`
-[see `RecursiveSum.hs`](https://github.com/johnchandlerburnham/hpfp/blob/master/08/RecursiveSum.hs)
+[See `RecursiveSum.hs`](/08/RecursiveSum.hs)
 
 3.  see `RecursiveMult.hs`
-[see `RecursiveMult.hs`](https://github.com/johnchandlerburnham/hpfp/blob/master/08/RecursiveMult.hs)
+[See `RecursiveMult.hs`](/08/RecursiveMult.hs)
 
 ### Fixing dividedBy:
 
-[see `DividedBy.hs`](https://github.com/johnchandlerburnham/hpfp/blob/master/08/DividedBy.hs)
+[See `DividedBy.hs`](/08/DividedBy.hs)
 
 ### McCarthy 91 function:
 
-[see `McCarth91.hs`](https://github.com/johnchandlerburnham/hpfp/blob/master/08/McCarth91.hs)
+[See `McCarth91.hs`](/08/McCarth91.hs)
 
 ### Numbers into Words:
 
-[see `WordNumber.hs`](https://github.com/johnchandlerburnham/hpfp/blob/master/08/WordNumber.hs)
+[See `WordNumber.hs`](/08/WordNumber.hs)
 
----

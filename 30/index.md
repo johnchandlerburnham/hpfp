@@ -1,7 +1,3 @@
----
-title: "Notes (HPFP 30/31): When things go wrong"
----
-
 # 30 When things go wrong
 
 ## 30.9 Asynchronous Exceptions

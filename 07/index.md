@@ -1,9 +1,3 @@
----
-title: "Notes (HPFP 07/31): More functional patterns"
-author: jcb
-date: 2017-11-01
----
-
 # 7 More functional patterns
 
 ## 7.1 Make it func-y
@@ -128,7 +122,7 @@ From [Gonzalez's "How to Desugar Haskell Code"](https://github.com/johnchandlerb
 
 ### Exercises: Variety Pack
 
-[see `VarietyPack.hs`](https://github.com/johnchandlerburnham/hpfp/blob/master/07/VarietyPack.hs)
+[See `VarietyPack.hs`](/07/VarietyPack.hs)
 
 One important thing to remember about tuple syntax in Haskell is that the type
 constructor and data constructor syntax for tuples is exactly the same, and has
@@ -178,7 +172,7 @@ Pattern matching, if-then-else, guards: they all desugar to case expressions.
 
 ### Exercises: Case Practice
 
-see `CasePractice.hs`
+See `CasePractice.hs`
 
 ## 7.6 Higher-order functions
 
@@ -215,7 +209,7 @@ collapse the above chart into *values*, *first-order functions*, and
 
 ### Exercises: Guard Duty
 
-[see `AvgGrade.hs`](https://github.com/johnchandlerburnham/hpfp/blob/master/07/AvgGrade.hs)
+[See `AvgGrade.hs`](/07/AvgGrade.hs)
 
 1. Can't do otherwise if theres no wise to other.
 2. No, because the conditions are not exclusive.
@@ -256,8 +250,8 @@ easier for another person to understand the function you're writing.
 
 ### Let's write code
 
-[see `LetsWriteCode.hs`](https://github.com/johnchandlerburnham/hpfp/blob/master/07/LetsWriteCode.hs)
-[see `Arith4.hs`](https://github.com/johnchandlerburnham/hpfp/blob/master/07/Arith4.hs)
+[See `LetsWriteCode.hs`](/07/LetsWriteCode.hs)
+[See `Arith4.hs`](/07/Arith4.hs)
 
 
 ## 7.13 Follow-up resources

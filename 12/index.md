@@ -17,30 +17,28 @@ tags: hpfp, notes, haskell
 
 ### String processing
 
-[see `StringProcessing.hs`](https://github.com/johnchandlerburnham/hpfp/blob/master/12/StringProcessing.hs)
+[See `StringProcessing.hs`](/12/StringProcessing.hs)
 
 ### Validate the word
 
-[see `StringProcessing.hs`](https://github.com/johnchandlerburnham/hpfp/blob/master/12/StringProcessing.hs)
+[See `StringProcessing.hs`](/12/StringProcessing.hs)
 
 ### It's only Natural
 
-[see `Natural.hs.hs`](https://github.com/johnchandlerburnham/hpfp/blob/master/12/Natural.hs.hs)
+[See `Natural.hs`](/12/Natural.hs)
 
 ### Small library for Maybe
 
-[see `MaybeLib.hs.hs`](https://github.com/johnchandlerburnham/hpfp/blob/master/12/MaybeLib.hs.hs)
+[See `MaybeLib.hs`](/12/MaybeLib.hs)
 
 ### Small library for Either
 
-[see `EitherLib.hs.hs`](https://github.com/johnchandlerburnham/hpfp/blob/master/12/EitherLib.hs.hs)
+[See `EitherLib.hs`](/12/EitherLibhs)
 
 ### Write your own iterate and unfoldr
 
-see `Unfolds.hs`
-[see `Unfolds.hs.hs`](https://github.com/johnchandlerburnham/hpfp/blob/master/12/Unfolds.hs.hs)
+[See `Unfolds.hs`](/12/Unfolds.hs)
 
 ### Finally something other than a list
 
-see `BinaryTreeUnfold.hs`
-[see `BinaryTreeUnfold.hs.hs`](https://github.com/johnchandlerburnham/hpfp/blob/master/12/BinaryTreeUnfold.hs.hs)
+[See `BinaryTreeUnfold.hs`](/12/BinaryTreeUnfold.hs)

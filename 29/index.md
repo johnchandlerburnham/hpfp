@@ -1,7 +1,3 @@
----
-title: "Notes (HPFP 29/31): IO"
----
-
 # 29 IO
 
 One interesting thing about how `IO` is defined is that
@@ -46,11 +42,11 @@ main = do
 
 ### File IO with Vigenere
 
-see `src/VignereFile.hs`
+[See `src/VignereFile.hs`](/29/inputOutput/src/VignereFile.hs)
 
 ### Config directories
 
-see `src/ConfigDirectories.hs`
+[See `src/ConfigDirectories.hs`](/29/inputOutput/src/ConfigDirectories.hs)
 
 I love how terse this program is. Just traverse a parser and zip!
 
