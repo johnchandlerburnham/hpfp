@@ -205,19 +205,16 @@ This corresponds to non-terminating function (an infinite loop).
     Calculus](http://www.inf.fu-berlin.de/lehre/WS03/alpi/lambda.pdf)
 
     [Notes: A Tutorial Introduction to the Lambda Calculus
-    (Rojas)](/notes/tilc/00.html)
+    (Rojas)](/projects/tilc/00/index.html)
 
 2.  [Henk Barendregt; Erik Barendsen. Introduction to Lambda
     Calculus](http://www.cse.chalmers.se/research/group/logic/TypesSS05/
     Extra/geuvers.pdf)
 
     [Notes: Introduction to Lambda Calculus by Henk Barendregt & Erik
-    Barendsen](/notes/lcbb/00.html)
+    Barendsen](/projects/lcbb/00/index.html)
 
 3.  [Jean-Yves Girard; P. Taylor; Yves Lafon.
     Proofs and Types](http://www.paultaylor.eu/stable/prot.pdf)
-
-    [Notes: Proofs And Types by Jean-Yves Girard
-    Barendsen](/notes/prot/00.html)
 
 ---
